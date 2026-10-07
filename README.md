@@ -1,1 +1,3 @@
-# exd-case-akvarie
+#EXD: Akvarie tema
+
+Lavet af gruppe 2
