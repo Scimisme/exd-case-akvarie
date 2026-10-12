@@ -1,5 +1,6 @@
 "use strict";
 
+//variabler skal opdateres så de matcher med vores egen tabel
 const fish = [
     {
         id: "blueFish",
