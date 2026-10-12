@@ -70,14 +70,7 @@ fish.forEach(function(fishObj) {
 
 //getters for DOM elementer
 const getTooltip = document.getElementById("tooltip");
-const getSun = document.getElementById("sun");
 const getScene = document.getElementById("scene");
-
-//til skift mellem dag og nat (skal nok fjernes)
-getSun.addEventListener("click", function() {
-   getScene.classList.toggle("night");
-});
-
 
 // Denne variabel husker tooltip'ens timer (bruges nederst i showTooltip)
 let tooltipTimer;
