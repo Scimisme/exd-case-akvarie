@@ -81,14 +81,14 @@ getSun.addEventListener("click", function() {
 // Denne variabel husker tooltip'ens timer (bruges nederst i showTooltip)
 let tooltipTimer;
 
-//funktion til at vise tooltip med bilens informationer
-function showTooltip(car) {
+//funktion til at vise tooltip med fiskens informationer
+function showTooltip(fish) {
 
     getTooltip.innerHTML = `
-         <strong>${car.brand} ${car.model}</strong><br>
-         Årgang: ${car.year}<br>
-         Farve: ${car.color}<br>
-         Brændstof: ${car.fuel}<br>
+         <strong>${fish.name} (${fish.species})</strong><br>
+         Længde: ${fish.length} cm<br>
+         Vægt: ${fish.weight} kg<br>
+         Levested: ${fish.habitat}<br>
     `;
 
     //tilføjer klassen "is-visible" til tooltip'en, så den bliver synlig
@@ -104,26 +104,26 @@ function hideTooltip() {
    getTooltip.classList.remove("is-visible");
 }
 
-//funktion til at afspille bilens lyd
-function playSound(car) {
-   const audio = new Audio(car.sound);
+//funktion til at afspille fiskens lyd
+function playSound(fish) {
+   const audio = new Audio(fish.sound);
    audio.play();
 }
 
-//forEach loop, der går igennem alle bilerne i cars-arrayet
-cars.forEach(function(car) {
+//forEach loop, der går igennem alle fiskene i fish-arrayet
+fish.forEach(function(fish) {
 
-    // Eksempel: hent bilens <img> ved hjælp af id'et fra dataen
-   const getCarElem = document.getElementById(car.id);
+    // Eksempel: hent fiskens <img> ved hjælp af id'et fra dataen
+   const getFishElem = document.getElementById(fish.id);
 
     // Eksempel: når musen kommer ind over bilen, vises bilens informationer.
     // Nyt i dag: "mouseenter" er en ny event - ligesom "click", bare når musen kommer ind over elementet.
-   getCarElem.addEventListener("mouseenter", function() {
-        showTooltip(car);
+   getFishElem.addEventListener("mouseenter", function() {
+        showTooltip(fish);
    });
 
-    // Skriv selv: lyt efter "click" på getCarElem og kald playSound(car) inde i en anonym function.
-   getCarElem.addEventListener("click", function() {
-      playSound(car)
+    // Skriv selv: lyt efter "click" på getFishElem og kald playSound(fish) inde i en anonym function.
+   getFishElem.addEventListener("click", function() {
+      playSound(fish)
    });
 });
