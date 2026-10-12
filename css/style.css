@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
 /* Reset CSS */
 
 * {
@@ -7,25 +10,15 @@
     font-family: var(--font-body);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 :root {
    --font-body: 'Poppins', sans-serif;
-
-   /* Farver */
-   --color-sky-top: #a6d8ff;
-   --color-sky-mid: #ffffff;
-   --color-sky-bot: #ffffff;
-   --color-night: #222833;
-   --color-sun: #ffffff;
-   --sun-size: 100px;
-   --car-w: 200px;
+   --fish-w: 200px;
 }
 
 .scene {
    position: relative;
    height: 100vh;
-   weight: 100vw;
+   width: 100vw;
    overflow: hidden;
    background: transparent;
 }
@@ -38,7 +31,7 @@
    background: url(../img/midlertidig_baggrund.svg);
    background-size: cover;
    background-position: center;
-   background-repeat: center;
+   background-repeat: no-repeat;
 }
 
 @keyframes animateBg {
@@ -53,7 +46,7 @@
 .fish5,
 .fish6 {
    position: absolute;
-   width: var(--car-w);
+   width: var(--fish-w);
    max-width: 28vw;
    z-index: 1;
    cursor: pointer; /* viser en hånd, så man kan se, at bilerne kan klikkes */
