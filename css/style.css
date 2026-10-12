@@ -78,7 +78,7 @@
    inset: auto 0 0 0; 
    width: 100%;
    height: 280px;
-   background: url(../img/bg.png);
+   background: url(../img/midlertidig_baggrund.svg);
    background-size: 100vw auto;
    background-repeat: repeat-x; 
    animation: animateBg 17s linear infinite;
