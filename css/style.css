@@ -89,11 +89,12 @@
    100% { background-position-x: -100vw; }
 }
 
-.car1,
-.car2,
-.car3,
-.car4,
-.car5 {
+.fish1,
+.fish2,
+.fish3,
+.fish4,
+.fish5
+.fish6 {
    position: absolute;
    width: var(--car-w);
    max-width: 28vw;
@@ -101,61 +102,73 @@
    cursor: pointer; /* viser en hånd, så man kan se, at bilerne kan klikkes */
 }
 
-.car1 {
+.fish1 {
    bottom: 5vh;
    left: -30vw; /* starter 30vw uden for skærmen til venstre */
-   animation: car1 18s linear infinite;
+   animation: fish1 18s linear infinite;
 }
 
-@keyframes car1 {
+@keyframes fish1 {
    0%   { transform: translateX(0); }
    100% { transform: translateX(130vw); }
 }
 
-.car2 {
+.fish2 {
    bottom: 2.8vh;
    right: -30vw; /* starter 30vw uden for skærmen til højre */
-   animation: car2 12s linear infinite;
+   animation: fish2 12s linear infinite;
 }
 
-@keyframes car2 {
+@keyframes fish2 {
    0%   { transform: translateX(0) rotateY(180deg); }
    100% { transform: translateX(-130vw) rotateY(180deg); }
 }
 
-.car3 {
+.fish3 {
    bottom: -3.4vh;
    left: -30vw; /* starter 30vw uden for skærmen til venstre */
-   animation: car3 8s linear infinite;
+   animation: fish3 8s linear infinite;
 }
 
-@keyframes car3 {
+@keyframes fish3 {
    0%   { transform: translateX(0) rotateY(180deg); }
    100% { transform: translateX(130vw) rotateY(180deg); }
 }
 
-.car4 {
+.fish4 {
    bottom: 15vh;
    left: -40vw;
-   animation: car4 8s linear infinite;
+   animation: fish4 8s linear infinite;
    width: 250px;
 }
 
-@keyframes car4 {
+@keyframes fish4 {
    0%   { transform: translateX(0) rotateY(180deg); }
    100% { transform: translateX(180vw) rotateY(180deg); }
 }
 
-.car5 {
+.fish5 {
    bottom: 10vh;
    left: -75vw;
-   animation: car5 8s linear infinite;
+   animation: fish5 8s linear infinite;
    width: 200px;
 }
 
-@keyframes car5 {
+@keyframes fish5 {
    0%   { transform: translateX(0) rotateY(180deg); }
    100% { transform: translateX(300vw) rotateY(180deg); }
+}
+
+.fish6 {
+   bottom: 10vh;
+   left: -75vw;
+   animation: fish6 8s linear infinite;
+   width: 200px;
+}
+
+@keyframes fish6 {
+   0%   { transform: translateX(0) rotateY(0deg); }
+   100% { transform: translateX(300vw) rotateY(0deg); }
 }
 
 .tooltip {
