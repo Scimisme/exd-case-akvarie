@@ -1,0 +1,159 @@
+<svg width="350" height="166" viewBox="0 0 350 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+svg { overflow: visible; }
+@keyframes kf_Frame_5_transform_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(222px) translate(0px, 82.488px) scaleX(1) scaleY(1) translate(0px, -82.488px);
+  }
+  9.95% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(222px) translate(0px, 82.488px) scaleX(0.8) scaleY(1) translate(0px, -82.488px);
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(222px) translate(0px, 82.488px) scaleX(1) scaleY(1) translate(0px, -82.488px);
+  }
+  30.1% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(222px) translate(0px, 82.488px) scaleX(0.8) scaleY(1) translate(0px, -82.488px);
+  }
+  40.1% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(222px) translate(0px, 82.488px) scaleX(1) scaleY(1) translate(0px, -82.488px);
+  }
+  49.95% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(222px) translate(0px, 82.488px) scaleX(0.8) scaleY(1) translate(0px, -82.488px);
+  }
+  60% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(222px) translate(0px, 82.488px) scaleX(1) scaleY(1) translate(0px, -82.488px);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(222px) translate(0px, 82.488px) scaleX(0.8) scaleY(1) translate(0px, -82.488px);
+  }
+  80.2% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(222px) translate(0px, 82.488px) scaleX(1) scaleY(1) translate(0px, -82.488px);
+  }
+  90% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(222px) translate(0px, 82.488px) scaleX(0.8) scaleY(1) translate(0px, -82.488px);
+  }
+  99.9% {
+    transform: translateX(222px) translate(0px, 82.488px) scaleX(1) scaleY(1) translate(0px, -82.488px);
+  }
+  100% {
+    transform: translateX(222px) translate(0px, 82.488px) scaleX(1) scaleY(1) translate(0px, -82.488px);
+  }
+}
+#Frame_5 {
+  transform-origin: 0 0;
+  animation: kf_Frame_5_transform_0 2s linear infinite;
+}
+@keyframes kf_Vector_298_transform_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(1) scaleY(1) translate(0px, -28.298px);
+  }
+  9.85% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(0.8) scaleY(1) translate(0px, -28.298px);
+  }
+  9.95% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(0.85) scaleY(1) translate(0px, -28.298px);
+  }
+  19.25% {
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(1) scaleY(1) translate(0px, -28.298px);
+  }
+  19.8% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(1) scaleY(1) translate(0px, -28.298px);
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(0.8) scaleY(1) translate(0px, -28.298px);
+  }
+  30.05% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(0.85) scaleY(1) translate(0px, -28.298px);
+  }
+  40.25% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(1) scaleY(1) translate(0px, -28.298px);
+  }
+  50.05% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(0.85) scaleY(1) translate(0px, -28.298px);
+  }
+  60.15% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(1) scaleY(1) translate(0px, -28.298px);
+  }
+  70.05% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(0.85) scaleY(1) translate(0px, -28.298px);
+  }
+  80.35% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(1) scaleY(1) translate(0px, -28.298px);
+  }
+  90.05% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(0.85) scaleY(1) translate(0px, -28.298px);
+  }
+  100% {
+    transform: translateX(114px) translateY(69.017px) translate(0px, 28.298px) scaleX(1) scaleY(1) translate(0px, -28.298px);
+  }
+}
+#Vector_298 {
+  transform-origin: 0 0;
+  animation: kf_Vector_298_transform_0 2s linear infinite;
+}
+@keyframes kf___je_transform_0 {
+  0% {
+    transform: translateX(54px) translateY(58px) translate(15px, 19.5px) scaleX(1) scaleY(1) translate(-15px, -19.5px);
+  }
+  19.9% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(54px) translateY(58px) translate(15px, 19.5px) scaleX(1) scaleY(1) translate(-15px, -19.5px);
+  }
+  24.57% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(54px) translateY(58px) translate(15px, 19.5px) scaleX(1) scaleY(0) translate(-15px, -19.5px);
+  }
+  30.1% {
+    transform: translateX(54px) translateY(58px) translate(15px, 19.5px) scaleX(1) scaleY(1) translate(-15px, -19.5px);
+  }
+  100% {
+    transform: translateX(54px) translateY(58px) translate(15px, 19.5px) scaleX(1) scaleY(1) translate(-15px, -19.5px);
+  }
+}
+#__je {
+  transform-origin: 0 0;
+  animation: kf___je_transform_0 2s linear infinite;
+}
+</style>
+<g id="Frame_6">
+<ellipse id="Ellipse_14" transform="translate(0 37)" cx="129.5" cy="60.5" rx="129.5" ry="60.5" fill="#3F8C0E"/>
+<g id="Frame_5" transform="translate(222)">
+<path id="Vector_295" d="M113 10.0119C94.7227 -30.0408 13.5 63.0119 13.5 63.0119L0 135.012C0 135.012 64.6283 181.711 95 158.512C111.038 146.262 130.993 129.601 119.5 113.012C107.637 95.8896 44.5 89.0119 95 79.0119C145.5 69.0119 124.561 35.3467 113 10.0119Z" fill="#3F8C0E" stroke="#3F8C0E"/>
+<path id="Vector_296" transform="translate(20 31)" d="M61.2558 6.25075C51.348 -18.7554 7.31818 39.3403 7.31818 39.3403L0 84.2922C0 84.2922 35.0342 113.448 51.4983 98.964C60.1922 91.3159 71.0096 80.9138 64.7794 70.5569C58.3488 59.8669 24.1229 55.573 51.4983 49.3296C78.8737 43.0863 67.5229 22.0681 61.2558 6.25075Z" fill="#1F4408" stroke="#1F4408"/>
+</g>
+<g id="Vector_297" transform="matrix(1 0 0 -1 105.888 126.871)">
+<path d="M0.0566406 0.678711C-0.592624 -0.94833 4.57861 0.859643 4.61133 0.871094C11.1158 17.7793 11.3954 31.0007 4.61133 48.8691C4.57903 48.8781 -0.584147 50.3077 0.0566406 48.6777C7.08514 30.8095 6.80371 17.5867 0.0566406 0.678711Z" id="Vector_297_bg_0" fill="#1F4408">
+</path>
+<path d="M0.0566406 0.678711C-0.592624 -0.94833 4.57861 0.859643 4.61133 0.871094C11.1158 17.7793 11.3954 31.0007 4.61133 48.8691C4.57903 48.8781 -0.584147 50.3077 0.0566406 48.6777C7.08514 30.8095 6.80371 17.5867 0.0566406 0.678711Z" stroke="#3F8C0E"/>
+</g>
+<path id="Vector_298" transform="translate(114 69.017)" d="M31 2.48298C22.3409 -8.39299 0 19.983 0 19.983V46.483C0 46.483 25.2585 63.9393 31 52.983C35.2991 44.7791 23.5 30.483 23.5 30.483C23.5 30.483 38.051 11.339 31 2.48298Z" fill="#1F4408" stroke="#1F4408"/>
+<path id="Vector_299" transform="translate(111)" d="M2.73185 36.7871C-12.7231 38.352 41.8661 -16.1266 54.7318 4.78715C58.301 10.589 46.7318 20.2871 46.7318 20.2871C46.7318 20.2871 58.581 22.2194 61.4158 28.0121C61.5618 25.0813 62.4286 30.9078 61.7318 28.7871C61.6446 28.5214 61.5386 28.2631 61.4158 28.0121C61.3574 29.1833 61.4142 31.753 61.7318 36.7871C62.8444 54.4188 1.21761 37.1789 2.73185 36.7871Z" fill="#1F4408" stroke="#1F4408"/>
+<g id="__je" transform="translate(54 58)">
+<ellipse id="Ellipse_15" cx="15" cy="19.5" rx="15" ry="19.5" fill="white"/>
+<ellipse id="Ellipse_16" transform="translate(0 3)" cx="10.5" cy="16" rx="10.5" ry="16" fill="black"/>
+</g>
+<path id="Vector_300" transform="translate(32.5 111.5)" d="M23 0C17.2579 10.7775 13.779 16.7856 0 26.5L19 35.5C25.5351 18.5733 24.4773 10.8073 23 0Z" fill="#EE4B4B" stroke="#EE4B4B"/>
+</g>
+</svg>
