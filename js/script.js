@@ -1,55 +1,65 @@
 "use strict";
 
-const cars = [
-   {
-      id: "redCar",
-      brand: "Ford",
-      model: "Mustang",
-      year: 1974,
-      color: "Rød",
-      fuel: "Benzin",
-      sound: "sound/red-car-horn.wav"
-   },
+const fish = [
+    {
+        id: "blueFish",
+        name: "Blå Fisk",
+        species: "Torsk",
+        length: 30,
+        weight: 2.5,
+        habitat: "Havet",
+        sound: "sound/blue-fish-sound.wav"
+    },
 
-   {
-      id: "policeCar",
-      brand: "Volvo",
-      model: "242",
-      year: 1982,
-      color: "Blå og hvid",
-      fuel: "Diesel",
-      sound: "sound/police-car-sound.wav"
-   },
+    {
+        id: "clownFish",
+        name: "Klovnefisk",
+        species: "Klovnefisk",
+        length: 15,
+        weight: 0.5,
+        habitat: "Rødt koralrev",
+        sound: "sound/clown-fish-sound.wav"
+    },
 
-   {
-      id: "blueCar",
-      brand: "Volkswagen",
-      model: "Passat",
-      year: 1979,
-      color: "Lyseblå",
-      fuel: "Diesel",
-      sound: "sound/blue-car-sound.wav"
-   },
+    {
+        id: "greenFish",
+        name: "Grøn Fisk",
+        species: "Grøn Fisk",
+        length: 25,
+        weight: 1.5,
+        habitat: "Havet",
+        sound: "sound/green-fish-sound.wav"
+    },
 
-   {
-      id: "bus",
-      brand: "Mercedes",
-      model: "Benz",
-      year: 2017,
-      color: "Gul",
-      fuel: "Diesel",
-      sound: "sound/bus-sound.wav"
-   },
+    {
+        id: "orangeFish",
+        name: "Orange Fisk",
+        species: "Orange Fisk",
+        length: 20,
+        weight: 1.0,
+        habitat: "Havet",
+        sound: "sound/orange-fish-sound.wav"
+    },
 
-   {
-      id: "truck",
-      brand: "Scania",
-      model: "Gunnings",
-      year: 2008,
-      color: "Orange",
-      fuel: "Diesel",
-      sound: "sound/truck-sound.wav"
-   }
+    {
+        id: "redFish",
+        name: "Rød Fisk",
+        species: "Rød Fisk",
+        length: 35,
+        weight: 3.0,
+        habitat: "Havet",
+        sound: "sound/red-fish-sound.wav"
+    },
+ 
+    {
+        id: "yellowFish",
+        name: "Gul Fisk",
+        species: "Gul Fisk",
+        length: 18,
+        weight: 0.8,
+        habitat: "Havet",
+        sound: "sound/yellow-fish-sound.wav"
+    },
 ];
 
 cars.forEach(function(carObj) {
