@@ -1,0 +1,75 @@
+/* SHELDONS UNIVERS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fjern scrolling */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*HELE SKÆRMEN*/
+.main {
+   width: 100vh;
+   height: 100dvh;
+   overflow: hidden;
+   position: relative;
+}
+
+.baggrund {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    object-position: center bottom;
+}
+
+
+/*FAKTABOKS OMKRING SØHESTEN*/
+#reje-knap {
+    position: absolute;
+    right: 2%;
+    bottom: 3%;
+    width: 25%;
+    height: 20%;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+
+.info-boks {
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+    width: 300%;
+    max-width: 80%;
+    padding: 20px;
+    background-color:white;
+    border-radius: 20px;
+    z-index: 3;
+    font-family: arial, sans-serif;
+}
+
+.info-boks [hidden] {
+    display: none;
+}
+
+#luk-info {
+float: right;
+border: none;
+background: transparent;
+font-size: 20px;
+cursor: pointer;
+}
+
+
+
+
