@@ -11,6 +11,11 @@
     position: relative;
 }
 
+:root {
+   --font-body: 'Poppins', sans-serif;
+   --fish-w: 200px;
+}
+
 .navbar {
 display: flex;
 align-items: center;
@@ -22,11 +27,17 @@ z-index: 1000;
 width: 50px;
 }
 
-:root {
-   --font-body: 'Poppins', sans-serif;
-   --fish-w: 200px;
+header {
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    position: fixed; 
+    padding: 2%; 
+    z-index: 1;
 }
-
 .scene {
    position: relative;
    height: 100vh;
