@@ -106,4 +106,30 @@ cursor: pointer;
 }
 
 
+/*SPØRGSMÅLSTEGN VED GROTTEN*/
+#grotte-knap {
+    position: absolute;
+    left: 3%;
+    bottom: 25%;
+
+    width: 55%;
+    height: 55%;
+
+    border: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/*FAKTABOKS VED GROTTEN*/
+#grotte-info {
+    left:35%;
+    right: auto;
+    bottom: 40%;
+}
+
 
