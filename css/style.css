@@ -162,9 +162,9 @@
 }
 
 .fish1 {
-   bottom: 50vh;
+   bottom: 20vh;
    left: 10vw;
-   width: 500px;
+   width: 1200px;
    max-width: 100%;
    /* animation: fish1 18s linear infinite; */
 }
