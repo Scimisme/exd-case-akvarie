@@ -143,4 +143,13 @@ font-size: 20px;
 cursor: pointer;
 }
 
+/*SHELDON*/
+#sheldon {
+    position: absolute;
+    width: 12%;
+    z-index: 5;
+    top:40%;
+    left: 75%;
+}
+
 
