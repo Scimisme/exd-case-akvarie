@@ -11,6 +11,17 @@
     position: relative;
 }
 
+.navbar {
+display: flex;
+align-items: center;
+gap: 10px; 
+z-index: 1000;
+}
+
+.navbar img {
+width: 50px;
+}
+
 :root {
    --font-body: 'Poppins', sans-serif;
    --fish-w: 200px;
