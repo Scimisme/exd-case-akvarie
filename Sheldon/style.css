@@ -146,10 +146,13 @@ cursor: pointer;
 /*SHELDON*/
 #sheldon {
     position: absolute;
-    width: 12%;
+    width: 150px;
     z-index: 5;
     top:40%;
     left: 75%;
+
+    /*DETTE SPEJLVENDER HAM*/
+    transform: scaleX(-1);
 }
 
 
@@ -164,6 +167,47 @@ cursor: pointer;
 
     50% { transform: translateY(-30px); 
     }
+}
+
+
+/*SHELDONS TALEBOBLE*/
+#sheldon-info {
+    position:absolute;
+    top:20%;
+    left:8%;
+    width: 280px;
+    padding: 20px;
+
+    background-color:white;
+    border-radius: 20px;
+
+    font-family: arial, sans-serif;
+    z-index: 20;
+}
+
+#sheldon-info h2 {
+    margin-bottom: 12px;
+}
+
+#sheldon-info p {
+margin-bottom: 10px;
+}
+
+/*TALEBOBLENS LILLE SPIDS*/
+#sheldon-info::after {
+    content:"";
+    position:absolute;
+    bottom:-20px;
+    left: 40px;
+
+    border-width: 20px 15px 0 15px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+/*SKJUL TALEBOBLEN*/
+#sheldon-info[hidden] {
+    display: none;
 }
 
 
