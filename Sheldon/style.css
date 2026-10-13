@@ -153,3 +153,17 @@ cursor: pointer;
 }
 
 
+/*ANIMATION AF SHELDON OG BESTEMMELSE AF HVORDAN HAN SVØMMER*/
+.svommer {
+    animation: svomme 2s ease-in-out infinite;
+}
+
+@keyframes svomme {
+    0% { transform: translateY(0); 
+    }
+
+    50% { transform: translateY(-30px); 
+    }
+}
+
+
