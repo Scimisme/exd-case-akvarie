@@ -34,11 +34,21 @@ lukGrotte.addEventListener("click", () => {
 
 //HER HAR JEG HENTET SHELDON FRA HTML'EN, SÅ JEG KAN LAVE EN EVENTLISTENER PÅ HAM
 const getSheldon = document.getElementById("sheldon");
+const sheldonInfo = document.getElementById("sheldon-info");
+const lukSheldon = document.getElementById("luk-sheldon");
 
 //LYT EFTER KLIK PÅ SHELDON 
 getSheldon.addEventListener("click", function() {
     getSheldon.classList.toggle("svommer");
+    sheldonInfo.hidden = !sheldonInfo.hidden; //TALEBOBLEN SKIFTER MELLEM AT VÆRE SYNLIG OG SKJULT
 });
+
+//LUK TALEBOBLEN 
+lukSheldon.addEventListener("click", () => {
+    sheldonInfo.hidden = true;
+    getSheldon.classList.remove ("svommer");
+});
+
 
 
 
