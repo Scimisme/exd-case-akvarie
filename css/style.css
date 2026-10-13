@@ -16,6 +16,28 @@
    --fish-w: 200px;
 }
 
+.navbar {
+display: flex;
+align-items: center;
+gap: 10px; 
+z-index: 1000;
+}
+
+.navbar img {
+width: 50px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    position: fixed; 
+    padding: 2%; 
+    z-index: 1;
+}
 .scene {
    position: relative;
    height: 100vh;
@@ -51,28 +73,6 @@
    max-width: 28vw;
    z-index: 1;
    cursor: pointer; /* viser en hånd, så man kan se, at bilerne kan klikkes */
-}
-
-.fish1 {
-   bottom: 5vh;
-   left: -30vw; /* starter 30vw uden for skærmen til venstre */
-   animation: fish1 18s linear infinite;
-}
-
-@keyframes fish1 {
-   0%   { transform: translateX(0); }
-   100% { transform: translateX(130vw); }
-}
-
-.fish2 {
-   bottom: 2.8vh;
-   right: -30vw; /* starter 30vw uden for skærmen til højre */
-   animation: fish2 12s linear infinite;
-}
-
-@keyframes fish2 {
-   0%   { transform: translateX(0) rotateY(180deg); }
-   100% { transform: translateX(-130vw) rotateY(180deg); }
 }
 
 .fish3 {
@@ -157,5 +157,43 @@
     cursor: pointer;
 }
 
+/* Sø anemone univers */
 
+.sea-anemone-bg {
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   background: url(../img/sea_anemone_bg.svg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
 
+.fish1 {
+   bottom: 20vh;
+   left: 2vw;
+   width: 900px;
+   max-width: 100%;
+   /* animation: fish1 18s linear infinite; */
+}
+
+/*
+@keyframes fish1 {
+   0%   { transform: translateX(0); }
+   100% { transform: translateX(130vw); }
+}*/
+
+.fish2 {
+   bottom: 5vh;
+   right: 2.5vw; 
+   transform: rotateY(180deg);
+   width: 900px;
+   max-width: 100%;
+   /* animation: fish2 12s linear infinite; */
+}
+
+/*@keyframes fish2 {
+   0%   { transform: translateX(0) rotateY(180deg); }
+   100% { transform: translateX(-130vw) rotateY(180deg); }
+}*/
