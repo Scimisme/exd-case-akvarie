@@ -176,10 +176,10 @@
 }*/
 
 .fish2 {
-   bottom: 20vh;
-   right: 20vw; 
+   bottom: 5vh;
+   right: 2.5vw; 
    transform: rotateY(180deg);
-   width: 500px;
+   width: 900px;
    max-width: 100%;
    /* animation: fish2 12s linear infinite; */
 }
