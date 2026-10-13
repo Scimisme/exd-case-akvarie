@@ -32,3 +32,13 @@ lukGrotte.addEventListener("click", () => {
     grotteInfo.hidden = true;
 });
 
+//HER HAR JEG HENTET SHELDON FRA HTML'EN, SÅ JEG KAN LAVE EN EVENTLISTENER PÅ HAM
+const getSheldon = document.getElementById("sheldon");
+
+//LYT EFTER KLIK PÅ SHELDON 
+getSheldon.addEventListener("click", function() {
+    getSheldon.classList.toggle("svommer");
+});
+
+
+
