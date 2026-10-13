@@ -134,5 +134,18 @@ fish.forEach(function(fish) {
         }, 5000);
     });
 
+     //Starter animation af blå fisk ved klik
+    const clownFishImage = document.getElementById("clownFish");
+    let clownFishTimer;
+
+    clownFishImage.addEventListener("click", function() {
+        clownFishImage.src = "img/klovnfisk_interactive_animation.svg";
+
+        clearTimeout(clownFishTimer);
+        clownFishTimer = setTimeout(function() {
+            clownFishImage.src = "img/clown_fish.svg";
+        }, 2000);
+    });
+
 });
 
