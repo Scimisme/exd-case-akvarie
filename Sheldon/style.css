@@ -65,7 +65,7 @@ html, body {
 #luk-info {
 float: right;
 border: none;
-background: red;
+background: transparent;
 font-size: 20px;
 cursor: pointer;
 }
