@@ -163,22 +163,28 @@
 
 .fish1 {
    bottom: 50vh;
-   left: 10vw; /* starter 30vw uden for skærmen til venstre */
+   left: 10vw;
+   width: 500px;
+   max-width: 100%;
    /* animation: fish1 18s linear infinite; */
 }
 
+/*
 @keyframes fish1 {
    0%   { transform: translateX(0); }
    100% { transform: translateX(130vw); }
-}
+}*/
 
 .fish2 {
    bottom: 20vh;
    right: 20vw; 
+   transform: rotateY(180deg);
+   width: 500px;
+   max-width: 100%;
    /* animation: fish2 12s linear infinite; */
 }
 
-@keyframes fish2 {
+/*@keyframes fish2 {
    0%   { transform: translateX(0) rotateY(180deg); }
    100% { transform: translateX(-130vw) rotateY(180deg); }
-}
+}*/
