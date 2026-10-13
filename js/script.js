@@ -120,4 +120,19 @@ fish.forEach(function(fish) {
    getFishElem.addEventListener("click", function() {
       playSound(fish)
    });
+
+   //Starter animation af blå fisk ved klik
+   const blueFishImage = document.getElementById("blueFish");
+    let blueFishTimer;
+
+    blueFishImage.addEventListener("click", function() {
+        blueFishImage.src = "img/blue_fish_interactive_animation.svg";
+
+        clearTimeout(blueFishTimer);
+        blueFishTimer = setTimeout(function() {
+            blueFishImage.src = "img/blue_fish.svg";
+        }, 5000);
+    });
+
 });
+
