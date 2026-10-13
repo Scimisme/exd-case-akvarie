@@ -255,4 +255,29 @@ margin-bottom: 10px;
     cursor: pointer;
 }
 
+/*TILBAGE KNAP*/
+.tilbage-knap {
+    position: absolute;
+    top:3%;
+    left:3%;
+    z-index: 50;
+
+    background-color: white;
+    color:#175C77;
+    border-radius: 25px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    padding: 10px 15px;
+}
+
+.tilbage-knap:active {
+    background-color: #D6F3FA; 
+}
+
+
+
 
