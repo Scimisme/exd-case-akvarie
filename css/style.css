@@ -162,9 +162,9 @@
 }
 
 .fish1 {
-   bottom: 5vh;
-   left: -30vw; /* starter 30vw uden for skærmen til venstre */
-   animation: fish1 18s linear infinite;
+   bottom: 50vh;
+   left: 10vw; /* starter 30vw uden for skærmen til venstre */
+   /* animation: fish1 18s linear infinite; */
 }
 
 @keyframes fish1 {
@@ -173,9 +173,9 @@
 }
 
 .fish2 {
-   bottom: 2.8vh;
-   right: -30vw; /* starter 30vw uden for skærmen til højre */
-   animation: fish2 12s linear infinite;
+   bottom: 20vh;
+   right: 20vw; 
+   /* animation: fish2 12s linear infinite; */
 }
 
 @keyframes fish2 {
