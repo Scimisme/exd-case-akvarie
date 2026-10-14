@@ -1,12 +1,13 @@
-/* SHELDONS UNIVERS */
 
+
+/* FJERNER STANDARTAFSTANDE*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fjern scrolling */
+/* Fjern scrolling - GØR SIDEN LIGESÅ STOR SOM SKÆRMEN */
 html, body {
     width: 100%;
     height: 100%;

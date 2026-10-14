@@ -14,15 +14,23 @@
 
 
         <!--TILBAGE TIL STARTSIDEN-->
-        <a href="index.html" class="tilbage-knap"> <!--../ BETYDER MAN GÅR EN MAPPE TILBAGE-->
+        <a href="index.html" class="tilbage-knap"> <!--Brugt et a-tag, fordi brugeren skal navigere til en anden HTML-side. Jeg har givet linket en klasse, så jeg kan style det som en knap i CSS.-->
              ← Tilbage til akvariet
+             
         </a>
+
+
+
 
         <!--INTRODUKTION TIL BØRN-->
         <div class="intro-tekst"> 
-            <h1>Tryk rundt og udforsk akvariet!</h1>
-            <p>Kan du finde de hemmelige overraskelser?</p>
+        <h1>Tryk rundt og udforsk akvariet!</h1>
+
+        <p>Kan du finde de hemmelige overraskelser?</p>
+
         </div>
+
+
 
         <!--SHELDONS UNIVERS-->
         <img src="img/UNIVERSET.svg"
@@ -30,70 +38,89 @@
              class="baggrund">
 
 
+
         <!--SHELDON-->
         <img src="img/soehest-blue.svg" 
             alt="Sheldon den blå søhest"
             id="sheldon">
         
+
+
         <!--SHELDONS TALEBOBLE-->
         <div id="sheldon-info" class="sheldon-boble" hidden>
 
         <button id="luk-sheldon" aria-label="Luk taleboble">X</button>
 
-            <h2 class="sheldon-overskrift">Hej, jeg hedder Sheldon!</h2>
+        <h2 class="sheldon-overskrift">Hej, jeg hedder Sheldon!</h2>
 
-            <p class="sheldon-velkommen">Velkommen til mit undervandsunivers!</p>
+        <p class="sheldon-velkommen">Velkommen til mit undervandsunivers!</p>
 
-            <p>Jeg elsker at danse rundt i vandet!</p>
-        </div>xs
+        <p>Jeg elsker at danse rundt i vandet!</p>
+
+        </div>
 
 
         <!--KLIKBART OMRÅDE VED GUL SØHEST-->
-    <button id="gul-soehest-knap" aria-label="Information om søheste" >
-    <span class="spørgsmålstegn">?</span>
-    </button>
+        <button id="gul-soehest-knap" aria-label="Information om søheste" >
+        <span class="spørgsmålstegn">?</span>
 
-     <div id="gul-soehest-info" class="info-boks" hidden>
+        </button>
+
+        <div id="gul-soehest-info" class="info-boks" hidden>
         <button id="luk-gul-soehest" aria-label="Luk">X</button>
         <h2>Vidste du det?</h2>
+
         <p>Levealderen er 1-5 år</p>
+
         <p>Søheste kan blive mellem 15 og 40 cm lange, afhængigt af arten</p>
-     </div>
+
+        </div>
 
 
         <!--KLIKBART OMRÅDE VED REJERNE-->
-    <button id="reje-knap" aria-label="Information om søheste" >
+        <button id="reje-knap" aria-label="Information om søheste" >
         <span class="spørgsmålstegn">?</span>
-    </button>
+
+        </button>
 
 
         <!--INFORMATION OM SØHESTE-->
-    <div id="reje-info" class="info-boks" hidden>
-    <button id="luk-info" aria-label="Luk information">X</button>
+        <div id="reje-info" class="info-boks" hidden>
+        <button id="luk-info" aria-label="Luk information">X</button>
 
-    <h2>Vidste du det om søheste?</h2>
-    <p>Vidste du, at søheste ikke har tænder? De suger deres mad ind gennem deres lange snude!</p>
-    <p>Derudover ELSKER de rejer</p> 
-    </div>
+        <h2>Vidste du det om søheste?</h2>
+
+         <p>Vidste du, at søheste ikke har tænder? De suger deres mad ind gennem deres lange snude!</p>
+
+        <p>Derudover ELSKER de rejer</p> 
+
+        </div>
+
 
         <!--KLIKBART OMRÅDE VED GROTTEN-->
-    <button id="grotte-knap" aria-label="Information om den røde søhest" >
+        <button id="grotte-knap" aria-label="Information om den røde søhest" >
         <span class="spørgsmålstegn">?</span> 
-    </button>
+
+        </button>
+
+
 
          <!--INFORMATION OM SØHEST VED GROTTEN-->
-    <div id="grotte-info" class="info-boks" hidden>
-    <button id="luk-grotte" aria-label="Luk information">X</button>
+        <div id="grotte-info" class="info-boks" hidden>
+        <button id="luk-grotte" aria-label="Luk information">X</button>
 
-    <h2>Vidste du det om søheste?</h2>
-    <p>Søheste er mestre i at gemme sig! De kan kamuflere sig og tilpasse deres farver til omgivelserne</p>
-    <p>På den måde kan de skjule sig for fjender og næsten blive usynlige</p>
-    </div>
+        <h2>Vidste du det om søheste?</h2>
 
-    </main>
+        <p>Søheste er mestre i at gemme sig! De kan kamuflere sig og tilpasse deres farver til omgivelserne</p>
+
+        <p>På den måde kan de skjule sig for fjender og næsten blive usynlige</p>
+
+        </div>
+
+ </main>
 
         <!--JAVASCRIPT TIL SHELDONS UNIVERS-->
-    <script src="js/soehest.js"></script>
+        <script src="js/soehest.js"></script>
 
 </body>
 </html>
