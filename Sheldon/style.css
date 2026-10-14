@@ -74,6 +74,10 @@ main {
     align-items: flex-end;
 }
 
+#reje-info p + p {
+    margin-top: 20px;
+}
+
 
 .info-boks {
     position: absolute;
@@ -169,6 +173,10 @@ font-size: 20px;
 cursor: pointer;
 }
 
+#grotte-info p + p {
+    margin-top: 20px;
+}
+
 /*SHELDON*/
 #sheldon {
     position: absolute;
@@ -219,10 +227,14 @@ cursor: pointer;
 
 #sheldon-info .sheldon-velkommen {
     margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 18px;
 }
 
 #sheldon-info p {
-margin-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 18px;
 }
 
 /*TALEBOBLENS LILLE SPIDS*/
