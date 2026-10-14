@@ -135,12 +135,6 @@
     cursor: pointer;
 }
 
-
-
-   cursor: pointer;
-}
-
-
 /* Sø anemone univers */
 
 .sea-anemone-bg {
@@ -162,12 +156,6 @@
    /* animation: fish1 18s linear infinite; */
 }
 
-/*
-@keyframes fish1 {
-   0%   { transform: translateX(0); }
-   100% { transform: translateX(130vw); }
-}*/
-
 .fish2 {
    bottom: 5vh;
    right: 2.5vw; 
@@ -177,7 +165,11 @@
    /* animation: fish2 12s linear infinite; */
 }
 
-/*@keyframes fish2 {
-   0%   { transform: translateX(0) rotateY(180deg); }
-   100% { transform: translateX(-130vw) rotateY(180deg); }
-}*/
+/*Tilbage knap til index.html fra sea_anemone.html*/
+.main-link {
+   position: absolute;
+   top: 2vh;
+   left: 2vw;
+   background-color: #ffffff; /*Skal ændres til en global farve*/
+   color: #000000;
+}
