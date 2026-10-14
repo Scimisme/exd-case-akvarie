@@ -39,3 +39,9 @@ html, body {
     width: 600px; 
     height: auto;
 }
+
+#skattekiste.aktiv {
+  transform: scale(1.2);
+   bottom: 120px;
+   left: 48%;
+}

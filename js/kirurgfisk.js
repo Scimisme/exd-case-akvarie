@@ -1,18 +1,27 @@
 "use strict";
 
+console.log("1: scriptet kører");
 const kiste = document.getElementById("skattekiste");
 
-function aabenKiste(event) {
+console.log("2: kiste er:", kiste);
+
+const lukketKiste = "img/skattekiste-statisk.svg";
+const aabenKiste = "img/skattekiste-aaben.svg";
+
+const forudindlaes = new Image();
+forudindlaes.src = aabenKiste;
+
+function skiftKiste(event) {
+  console.log("3: funktionen kører, hændelse:", event.type);
+
   if (event.type === "mouseenter") {
-    // Musen hover over: viser den animerede kiste
-    kiste.src = "img/skattekiste-aaben.svg";
+    kiste.src = aabenKiste;
     kiste.classList.add("aktiv");
   } else {
-    // Ellers vis den statiske kiste
-    kiste.src = "img/skattekiste-statisk.svg";
+    kiste.src = lukketKiste;
     kiste.classList.remove("aktiv");
   }
 }
-link.addEventListener("mouseenter", aabenKiste);
-link.addEventListener("mouseleave", aabenKiste);
 
+kiste.addEventListener("mouseenter", skiftKiste);
+kiste.addEventListener("mouseleave", skiftKiste);
