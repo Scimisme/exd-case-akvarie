@@ -21,7 +21,7 @@ html, body {
    position: relative;
 }
 
-.guld-baggrund {
+#guld-baggrund {
     display: block;
     width: 100%;
     height: 100%;
