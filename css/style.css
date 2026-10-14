@@ -158,24 +158,25 @@ header {
 }
 
 /* Kirurgfisk univers*/
-#skattekiste-link {
-  position: left;
-  bottom: 5%;       /* dine egne værdier */
-  left: 40%;
-  width: 150px;
+#skattekisteLink {
+  position: absolute;
+  bottom: 1%;        /* ret til dine egne værdier */
+  left: 30%;
+  width: 250px;      /* her bestemmer du kistens størrelse */
   display: block;
   z-index: 10;
 }
 
 #skattekiste {
-  width: 100%;
+  width: 100%;       /* fylder linket ud */
+  height: auto;      /* beholder de rigtige proportioner */
+  display: block;
   transition: transform 0.3s ease;
 }
 
 #skattekiste.aktiv {
   transform: scale(1.1);
 }
-
 /* Sø anemone univers */
 
 .sea-anemone-bg {
@@ -188,14 +189,6 @@ header {
    background-position: center;
    background-repeat: no-repeat;
 }
-
-.skattekiste{
-  width: 200px;
-  transition: transform 0.3s ease;   /* gør størrelsesændringen blød */
-}
-   .skattekiste.aktiv {
-   transform: scale(1.1);             /* 10 % større */
-   }
 
 
 .fish1 {
