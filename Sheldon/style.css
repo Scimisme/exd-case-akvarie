@@ -321,7 +321,7 @@ cursor: pointer;
 }
 
 /* AURA RUNDT OM SHELDON, SOM INDIKERER AT MAN KAN TRYKKE PÅ HAM */
-#sheldon:not(.ved-rejerne):not(ved-grotten) {
+#sheldon:not(.ved-rejerne):not(.ved-grotten):not(.svommer) {
     filter: drop-shadow(0 0 2px #7eeaff)
             drop-shadow(0 0 5px #38d9ff);
 
