@@ -153,8 +153,8 @@ fish.forEach(function(fish) {
 
 
 
-const link = document.querySelector(".skattekiste-link");
-const kiste = document.querySelector(".skattekiste");
+const link = document.getElementById("skattekisteLink");
+const kiste = document.getElementById("skattekiste");
 console.log(link, kiste);
 
 const statiskBillede = "img/skattekiste-statisk.svg";
