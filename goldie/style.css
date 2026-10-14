@@ -30,6 +30,7 @@ html, body {
     object-position: center bottom;
 }
 
+/* styler det element, hvori dag og nat-knapperne er placeret */
 .dag-nat-knapper {
     position: fixed;
     top: 20px;
@@ -38,6 +39,7 @@ html, body {
     gap: 15px;
 }
 
+/* styler sol og måne knapperne */
 .dag-nat-knapper button {
     background: none;
     border: none;
@@ -45,6 +47,7 @@ html, body {
     cursor: pointer;
 }
 
+/* styler kun selve billede i knappen */
 .dag-nat-knapper img {
     width: 50px;
     display: block;
