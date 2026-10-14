@@ -153,22 +153,19 @@ fish.forEach(function(fish) {
 
 
 
-const link = document.getElementById("skattekisteLink");
-const kiste = document.getElementById("skattekiste");
+const getLink = document.getElementById("skattekisteLink");
+const getKiste = document.getElementById("skattekiste");
 console.log(link, kiste);
 
-const statiskBillede = "img/skattekiste-statisk.svg";
-const animeretBillede = "img/skattekiste-animeret.svg";
+//funktion til statisk skattekiste
+function statiskBillede(){
+    billede.src = "img/skattekiste-statisk.svg;"
+}
 
-const forudindlaes = new Image();
-forudindlaes.src = animeretBillede;
+//funktion til statisk skattekiste
+function animeretBillede (){
+    billede.src = "img/skattekiste-animeret.svg";
+}
 
-link.addEventListener("mouseenter", () => {
-  kiste.src = animeretBillede;
-  kiste.classList.add("aktiv");
-});
-
-link.addEventListener("mouseleave", () => {
-  kiste.src = statiskBillede;
-  kiste.classList.remove("aktiv");
-});
+skattekiste.addEventListener("mouseover", animeretBillede);
+skattekiste.addEventListener("mouseleave", statiskBillede);
