@@ -151,3 +151,21 @@ fish.forEach(function(fish) {
 
 });
 
+
+
+const kiste = document.querySelector(".skattekiste");
+
+const statiskBillede = "img/skattekiste-statisk.svg"
+const animeretBillede = "img/skattekiste-animeret.svg"
+
+const forudindlaes = new Image();forudindlaes.src = animeretBillede;
+    
+    kiste.addEventListener("mouseenter", () => {
+    kiste.src = animeretBillede;
+    kiste.classList.add("aktiv");
+    });
+
+    kiste.addEventListener("mouseleave", () => {
+    kiste.src = stilleBillede;
+    kiste.classList.remove("aktiv");
+    });
