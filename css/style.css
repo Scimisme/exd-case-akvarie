@@ -184,14 +184,7 @@ header {
    left: 2vw;
    width: 900px;
    max-width: 100%;
-   /* animation: fish1 18s linear infinite; */
 }
-
-/*
-@keyframes fish1 {
-   0%   { transform: translateX(0); }
-   100% { transform: translateX(130vw); }
-}*/
 
 .fish2 {
    bottom: 5vh;
@@ -199,10 +192,23 @@ header {
    transform: rotateY(180deg);
    width: 900px;
    max-width: 100%;
-   /* animation: fish2 12s linear infinite; */
 }
 
-/*@keyframes fish2 {
-   0%   { transform: translateX(0) rotateY(180deg); }
-   100% { transform: translateX(-130vw) rotateY(180deg); }
-}*/
+/*Tilbage knap til index.html*/
+.main-link {
+   position: absolute;
+   top: 2vh;
+   left: 2vw;
+   background-color: #ffffff; /*Skal ændres til en global farve*/
+   color: #000000;
+}
+
+.sea-anemone-link {
+   position: absolute;
+   left: 2%;
+   bottom: 2%;
+   width: 18%;
+   height: 16%;
+   z-index: 10;
+   cursor: pointer;
+}
