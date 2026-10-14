@@ -63,6 +63,8 @@ const fish = [
     },
 ];
 
+
+
 //forEach loop, der går igennem alle fiskene i fish-arrayet og logger deres navn og art til konsollen
 fish.forEach(function(fishObj) {
     console.log(`${fishObj.name} (${fishObj.species})`);
