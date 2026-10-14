@@ -7,6 +7,13 @@ const lukInfo = document.querySelector("#luk-info");
 // FOR AT ÅBNE INFORMATIONSBOKSEN 
 rejeKnap.addEventListener("click", () => {
     rejeInfo.hidden = false;
+
+//STOP DEN GAMLE SVØMMEANIMATION
+getSheldon.classList.remove("svommer");
+
+//SHELDON SVØMMER HEN TIL REJERNE
+getSheldon.classList.remove("ved-grotten");
+getSheldon.classList.add("ved-rejerne")
 });
 
 // FOR AT LUKKE INFORMATIONSBOKSEN
@@ -25,6 +32,13 @@ const lukGrotte = document.querySelector("#luk-grotte");
 grotteKnap.addEventListener("click", () => {
     grotteInfo.hidden = false;
     rejeInfo.hidden = true;        //Lukker reje-info boksen, hvis den er åben
+
+//STOP DEN GAMLE SVØMMEANIMATION
+getSheldon.classList.remove("svommer");
+
+//SHELDON SVØMMER HEN TIL GROTTEN 
+getSheldon.classList.remove("ved-rejerne");
+getSheldon.classList.add("ved-grotten")
 });
 
 // FOR AT LUKKE INFORMATIONSBOKSEN
