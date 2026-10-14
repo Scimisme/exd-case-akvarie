@@ -11,6 +11,31 @@
     position: relative;
 }
 
+/*INTRODUKTION TIL BØRN*/
+.intro-tekst {
+    position: absolute;
+    top: 4%;
+    left:50%;
+    transform: translateX(-50%);
+
+    background-color: azure;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    text-align: center;
+    font-family: Arial, sans-serif;
+    z-index: 10;
+}
+
+.intro-tekst h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.intro-tekst p {
+    font-size: 14px;
+}
+
 :root {
    --font-body: 'Poppins', sans-serif;
    --fish-w: 200px;

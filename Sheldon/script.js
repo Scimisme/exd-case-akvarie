@@ -24,8 +24,6 @@ lukInfo.addEventListener("click", () => {
 getSheldon.classList.remove("ved-rejerne");
 });
 
-
-
 //GROTTENS INTERAKTIVE ELEMENTER
 const grotteKnap = document .querySelector("#grotte-knap");
 const grotteInfo = document.querySelector("#grotte-info");
@@ -69,6 +67,27 @@ lukSheldon.addEventListener("click", () => {
     getSheldon.classList.remove ("svommer");
 });
 
+//DEN GULE SØHEST 
+const gulSoehestKnap = document .querySelector("#gul-soehest-knap");
+const gulSoehestInfo = document.querySelector("#gul-soehest-info");
+const lukGulSoehest = document.querySelector("#luk-gul-soehest");
 
+//ÅBEN FAKTABOKS
+gulSoehestKnap.addEventListener("click", () => {
+    gulSoehestInfo.hidden = false;
 
+//STOPPE GAMMEL ANIMATION
+ getSheldon.classList.remove("svommer");
 
+ //FJERNE DE ANDRE POSITIONER
+  getSheldon.classList.remove("ved-rejerne", "ved-grotten");
+
+  //SVØM HEN TIL DEN GULE SØHEST
+   getSheldon.classList.add("ved-gul-soehest");
+});
+
+//LUK FAKTABOKSEN
+lukGulSoehest.addEventListener("click", () => {
+    gulSoehestInfo.hidden = true;
+    getSheldon.classList.remove("ved-gul-soehest");
+});

@@ -270,6 +270,7 @@ cursor: pointer;
     display: none;
 }
 
+/*KRYDSET I FAKTABOKS*/
 #luk-sheldon {
     position: absolute;
     top: 10px;
@@ -306,6 +307,7 @@ cursor: pointer;
 
 /*SHELDON VIPPER MENS HAN SVØMMER*/
 #sheldon.ved-rejerne,
+#sheldon.ved-gul-soehest,
 #sheldon.ved-grotten {
     animation: sheldon-vipper 1s ease-in-out infinite alternate;
 }
@@ -321,7 +323,7 @@ cursor: pointer;
 }
 
 /* AURA RUNDT OM SHELDON, SOM INDIKERER AT MAN KAN TRYKKE PÅ HAM */
-#sheldon:not(.ved-rejerne):not(.ved-grotten):not(.svommer) {
+#sheldon:not(.ved-rejerne):not(.ved-grotten):not(.ved-gul-soehest):not(.svommer) {
     filter: drop-shadow(0 0 2px #7eeaff)
             drop-shadow(0 0 5px #38d9ff);
 
@@ -344,15 +346,42 @@ cursor: pointer;
 /*SPØRGSMÅLSTEGN VED GUL SØHEST*/
 #gul-soehest-knap {
     position: absolute;
-    top: 30%;
-    left: 80%;
+    top: 50%;
+    right: 22%;
+
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+
     z-index: 10;
 }
 
 #gul-soehest-info {
-    top: 38%;
+    top: 25%;
     left: 65%;
+
+    width: 280px;
+    padding: 20px;
+    height: auto;
+    bottom: auto;
+    right: auto;
 }
 
 
+#luk-gul-soehest {
+    position: absolute;
+    top: 10px;
+    right: 12px;
 
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*SHELDON SVØMMER HEN TIL SØHEST*/
+#sheldon.ved-gul-soehest {
+    top: 40%;
+    left: 65%;
+}
