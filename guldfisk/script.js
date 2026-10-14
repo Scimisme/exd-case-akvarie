@@ -1,6 +1,7 @@
 
 "use strict";
 
+// GULDFISKENS UNIVERS - NAT OG DAG-funktionen: start
 // Hent elementerne fra HTML
 const solKnap = document.getElementById("solKnap");
 const maaneKnap = document.getElementById("maaneKnap");
@@ -18,3 +19,5 @@ function visNat() {
 
 solKnap.addEventListener("click", visDag);
 maaneKnap.addEventListener("click", visNat);
+
+// GULDFISKENS UNIVERS - NAT OG DAG-funktionen: slut
