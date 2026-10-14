@@ -157,6 +157,25 @@ header {
     cursor: pointer;
 }
 
+/* Kirurgfisk univers*/
+#skattekiste-link {
+  position: left;
+  bottom: 5%;       /* dine egne værdier */
+  left: 40%;
+  width: 150px;
+  display: block;
+  z-index: 10;
+}
+
+#skattekiste {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+#skattekiste.aktiv {
+  transform: scale(1.1);
+}
+
 /* Sø anemone univers */
 
 .sea-anemone-bg {
@@ -178,7 +197,7 @@ header {
    transform: scale(1.1);             /* 10 % større */
    }
 
-   
+
 .fish1 {
    bottom: 20vh;
    left: 2vw;
