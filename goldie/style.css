@@ -29,3 +29,23 @@ html, body {
     position: absolute;
     object-position: center bottom;
 }
+
+.dag-nat-knapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.dag-nat-knapper button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.dag-nat-knapper img {
+    width: 50px;
+    display: block;
+}
