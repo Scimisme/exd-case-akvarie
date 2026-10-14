@@ -16,6 +16,28 @@
    --fish-w: 200px;
 }
 
+.navbar {
+display: flex;
+align-items: center;
+gap: 10px; 
+z-index: 1000;
+}
+
+.navbar img {
+width: 50px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    position: fixed; 
+    padding: 2%; 
+    z-index: 1;
+}
 .scene {
    position: relative;
    height: 100vh;
@@ -146,6 +168,15 @@
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
+}
+
+.skattekiste{
+  width: 200px;
+  transition: transform 0.3s ease;   /* gør størrelsesændringen blød */
+}
+
+.skattekiste.aktiv {
+  transform: scale(1.1);             /* 10 % større */
 }
 
 .fish1 {
