@@ -28,14 +28,4 @@ kiste.addEventListener("mouseenter", skiftKiste);
 kiste.addEventListener("mouseleave", skiftKiste);
 
 
-const scene = document.getElementById("scene");
-
-function skiftKiste(event) {
-  if (event.type === "mouseenter") {
-    kiste.src = aabenKiste;
-    scene.classList.add("kiste-aaben");
-  } else {
-    kiste.src = lukketKiste;
-    scene.classList.remove("kiste-aaben");
-  }
-}
+const akvarieScene = document.getElementById("scene");
