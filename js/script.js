@@ -1,4 +1,20 @@
-"use strict";
+const link = document.getElementById("skattekisteLink");
+const kiste = document.getElementById("skattekiste");
+
+function skiftKiste(event) {
+  if (event.type === "mouseenter") {
+    // Musen hover over: viser den animerede kiste
+    kiste.src = "img/skattekiste-animeret.svg";
+    kiste.classList.add("aktiv");
+  } else {
+    // Ellers vis den statiske kiste
+    kiste.src = "img/skattekiste-statisk.svg";
+    kiste.classList.remove("aktiv");
+  }
+}
+
+link.addEventListener("mouseenter", skiftKiste);
+link.addEventListener("mouseleave", skiftKiste);
 
 //variabler skal opdateres så de matcher med vores egen tabel
 const fish = [
@@ -150,22 +166,3 @@ fish.forEach(function(fish) {
     });
 
 });
-
-
-
-const getLink = document.getElementById("skattekisteLink");
-const getKiste = document.getElementById("skattekiste");
-console.log(link, kiste);
-
-//funktion til statisk skattekiste
-function statiskBillede(){
-    billede.src = "img/skattekiste-statisk.svg;"
-}
-
-//funktion til statisk skattekiste
-function animeretBillede (){
-    billede.src = "img/skattekiste-animeret.svg";
-}
-
-skattekiste.addEventListener("mouseover", animeretBillede);
-skattekiste.addEventListener("mouseleave", statiskBillede);
