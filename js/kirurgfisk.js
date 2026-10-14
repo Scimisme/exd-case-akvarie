@@ -2,6 +2,7 @@
 
 console.log("1: scriptet kører");
 const kiste = document.getElementById("skattekiste");
+const link = document.getElementById("skattekisteLink")
 
 console.log("2: kiste er:", kiste);
 
@@ -25,3 +26,16 @@ function skiftKiste(event) {
 
 kiste.addEventListener("mouseenter", skiftKiste);
 kiste.addEventListener("mouseleave", skiftKiste);
+
+
+const scene = document.getElementById("scene");
+
+function skiftKiste(event) {
+  if (event.type === "mouseenter") {
+    kiste.src = aabenKiste;
+    scene.classList.add("kiste-aaben");
+  } else {
+    kiste.src = lukketKiste;
+    scene.classList.remove("kiste-aaben");
+  }
+}
