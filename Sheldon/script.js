@@ -19,6 +19,9 @@ getSheldon.classList.add("ved-rejerne")
 // FOR AT LUKKE INFORMATIONSBOKSEN
 lukInfo.addEventListener("click", () => {
     rejeInfo.hidden = true;
+
+//SHELDON SVØMMER TILBAGE 
+getSheldon.classList.remove("ved-rejerne");
 });
 
 
@@ -44,6 +47,9 @@ getSheldon.classList.add("ved-grotten")
 // FOR AT LUKKE INFORMATIONSBOKSEN
 lukGrotte.addEventListener("click", () => {
     grotteInfo.hidden = true;
+
+//SHELDON SVØMMER TILBAGE 
+getSheldon.classList.remove("ved-grotten");
 });
 
 //HER HAR JEG HENTET SHELDON FRA HTML'EN, SÅ JEG KAN LAVE EN EVENTLISTENER PÅ HAM

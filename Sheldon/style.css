@@ -196,13 +196,13 @@ cursor: pointer;
 /*SHELDON SVØMMER HEN TIL GROTTEN*/
 #sheldon.ved-grotten {
     top: 50%;
-    left: 25%;
+    left: 20%;
 }
 
 /*SHELDON SVØMMER HEN TIL REJERNE*/
 #sheldon.ved-rejerne {
     top: 55%;
-    left: 70%;
+    left: 65%;
 }
 
 
@@ -302,6 +302,43 @@ cursor: pointer;
 
 .tilbage-knap:active {
     background-color: #D6F3FA; 
+}
+
+/*SHELDON VIPPER MENS HAN SVØMMER*/
+#sheldon.ved-rejerne,
+#sheldon.ved-grotten {
+    animation: sheldon-vipper 1s ease-in-out infinite alternate;
+}
+
+@keyframes sheldon-vipper {
+    from { 
+        rotate: -8deg;
+    }
+
+    to {
+        rotate: 8deg;
+    }
+}
+
+/* AURA RUNDT OM SHELDON, SOM INDIKERER AT MAN KAN TRYKKE PÅ HAM */
+#sheldon:not(.ved-rejerne):not(ved-grotten) {
+    filter: drop-shadow(0 0 2px #7eeaff)
+            drop-shadow(0 0 5px #38d9ff);
+
+    animation: sheldon-aura 2s ease-in-out infinite alternate; 
+}
+
+/*AURAEN PULSERER*/     
+@keyframes sheldon-aura {
+    from {
+        filter:drop-shadow(0 0 2px #7eeaff);
+    }
+
+    to {
+        filter:drop-shadow(0 0 12px #7eeaff)
+                drop-shadow(0 0 3px #ffffff)
+                drop-shadow(0 0 22px #38d9ff);
+    }
 }
 
 
