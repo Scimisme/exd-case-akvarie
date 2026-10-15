@@ -52,8 +52,8 @@ fisk.animate(
 
     fisk.animate(
         [
-            { transform: "translateX(0) scaleX(-1)" },
-            { transform: `translateX(-${window.innerWidth + 120}px)  scaleX(-1)` }
+            { transform: "translateX(0)" },
+            { transform: `translateX(-${window.innerWidth + 120}px)` }
         ],
         {
             duration: 15000,
