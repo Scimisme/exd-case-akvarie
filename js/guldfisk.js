@@ -21,24 +21,47 @@ maaneKnap.addEventListener("click", visNat);
 
 // GULDFISKENS SVØMME-FUNKTION: start
 
-// Hent guldfisken fra HTML
-const guldfisk = document.getElementById("orangeFish");
+// Hent alle guldfiskene
+const guldfisk = document.querySelectorAll(".fish");
 
-// Funktion der får guldfisken til at svømme
-function svoem() {
-    guldfisk.animate(
-        [
-            { transform: "translateX(0)" },
-            { transform: "translateX(1500px)" }
-        ],
-        {
-            duration: 15000,
-            iterations: Infinity,
-            easing: "linear"
-        }
+// Få alle guldfiskene til at svømme - index afgør hvilken numme fisk der er tale om
+guldfisk.forEach(function(fisk, index) {
+
+// Placering på skærmen - startplacering, næste fisk (index-rækkefølgen) sættes efter 20 ift. første fisk, vel og mærke i procent
+fisk.style.top = (25 + index * 20) + "%";
+
+// Hver anden fisk svømmer i modsat retning
+if (index % 2 === 0) { // Fra venstre mod højre
+    fisk.style.left = "-120px";
+
+fisk.animate(
+[
+    { transform: "translateX(0) scaleX(-1)" },
+    { transform: `translateX(${window.innerWidth + 120}px) scaleX(-1)` }
+],
+    {
+        duration: 15000,
+        iterations: Infinity,
+        easing: "linear",
+        delay: index * 3000
+    }
+);
+
+} else { // Fra højre mod venstre
+fisk.style.left = "100%";
+
+fisk.animate(
+[
+    { transform: "translateX(0)" },
+    { transform: `translateX(-${window.innerWidth + 120}px)` }
+],
+    {
+        duration: 15000,
+        iterations: Infinity,
+        easing: "linear",
+        delay: index * 3000
+    }
     );
 }
-// Kald funktionen
-svoem();
-
+});
 // GULDFISKENS SVØMME-FUNKTION: slut
