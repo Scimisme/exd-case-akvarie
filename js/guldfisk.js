@@ -35,10 +35,10 @@ if (index % 2 === 0) { // Fra venstre mod højre
     fisk.style.left = "-120px";
 
 fisk.animate(
-    [
-        { transform: "translateX(0) scaleX(-1)" },
-        { transform: `translateX(${window.innerWidth + 120}px) scaleX(-1)` }
-    ],
+[
+    { transform: "translateX(0) scaleX(-1)" },
+    { transform: `translateX(${window.innerWidth + 120}px) scaleX(-1)` }
+],
     {
         duration: 15000,
         iterations: Infinity,
@@ -48,19 +48,19 @@ fisk.animate(
 );
 
 } else { // Fra højre mod venstre
-    fisk.style.left = "100%";
+fisk.style.left = "100%";
 
-    fisk.animate(
-        [
-            { transform: "translateX(0)" },
-            { transform: `translateX(-${window.innerWidth + 120}px)` }
-        ],
-        {
-            duration: 15000,
-            iterations: Infinity,
-            easing: "linear",
-            delay: index * 3000
-        }
+fisk.animate(
+[
+    { transform: "translateX(0)" },
+    { transform: `translateX(-${window.innerWidth + 120}px)` }
+],
+    {
+        duration: 15000,
+        iterations: Infinity,
+        easing: "linear",
+        delay: index * 3000
+    }
     );
 }
 });
