@@ -39,6 +39,7 @@ function svoemHenTilKiste(event) {
       document.querySelector(".fisk2").style.scale = "-1 1";
 
       document.querySelector(".fisk3").style.translate = "600px -100px";
+      document.querySelector(".fisk3").style.scale = "1 1";
 
       document.querySelector(".fisk4").style.translate = "-200px -150px";
       document.querySelector(".fisk4").style.scale = "-1 1";
