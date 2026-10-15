@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Anemone</title>
+    <link rel="stylesheet" href="css/klovnfisk.css">
+</head>
+<body>
+    <section id="sea-anemone-scene" class="scene sea-anemone-scene">
+        <div class="sea-anemone-bg">
+            <img src="img/blue_fish.svg" id="blueFish" class="fish1">   <!-- Husk at tjekke andres ID-->
+            <img src="img/clown_fish.svg" id="clownFish" class="fish2">
+        </div>
+
+        <!--Link til main background-->
+        <a href="index.html" class="main-link">← Tilbage til akvariet</a>
+
+        <!-- Intro tekst-->
+        <div class="intro-tekst"> 
+            <h1>Tryk rundt og udforsk akvariet!</h1>
+            <p>Tryk på fiskene og lær om deres egenskaber</p>
+        </div>
+
+        <!-- Tale bobler-->
+        <div id="blue-fish-info" class="blue-fish-info" hidden>
+            <p>Av! Sø anemoner er giftige! Dem kan jeg ikke røre ved...</p>
+        </div>
+
+        <div id="clown-fish-info" class="clown-fish-info" hidden>
+            <p>Jeg er en klovnfisk! Jeg bor i sø anemoner, fordi de beskytter mig mod rovdyr.</p>
+        </div>
+
+    </section>
+
+    <div id="tooltip" class="tooltip" aria-live="polite"></div>
+    <script src="js/klovnfisk.js"></script>
+</body>
+</html>

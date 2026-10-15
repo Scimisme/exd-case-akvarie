@@ -52,3 +52,14 @@ html, body {
     width: 50px;
     display: block;
 }
+
+/*Styling af fiskene (kan justere efter behov */
+.scene {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.fish4 {
+    width: 120px;
+}
