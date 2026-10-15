@@ -125,3 +125,20 @@
 .blue-fish-info[hidden] {
     display: none;
 }
+
+.clown-fish-info {
+    position: absolute;
+    top: 40vh;
+    left: 60vw;
+    width: min(320px, 90%);
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    z-index: 20;
+    font-family: Arial, sans-serif;
+}
+
+.clown-fish-info[hidden] {
+    display: none;
+}
+

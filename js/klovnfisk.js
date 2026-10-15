@@ -86,4 +86,17 @@ fish.forEach(function(fish) {
         }, 3500);
     });
 
+    //Info box til klovnfisk
+    const clownFishForInfo = document.getElementById("clownFish");
+    const clownFishInfo = document.getElementById("clown-fish-info");
+    let infoHideTimer2; 
+
+    clownFishForInfo.addEventListener("click", () => {
+        clearTimeout(infoHideTimer2);
+        clownFishInfo.hidden = false;
+
+        infoHideTimer2 = setTimeout(() => {
+            clownFishInfo.hidden = true;
+        }, 4000);
+    });
 });
