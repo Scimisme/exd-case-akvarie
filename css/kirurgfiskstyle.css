@@ -32,6 +32,33 @@ html, body {
     object-position: center bottom;
 }
 
+/*FÆLLES DESIGN TIL ALLE FAKTABOKSE*/
+#info-kirurgfisk {
+    position: absolute;
+    right: 70%;
+    bottom: 11%;
+
+    width: 380px;
+    padding: 27px;
+    max-width: 90%;
+
+    background-color:#2CAA9A;
+    border-radius: 20px;
+    z-index: 10;
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+    color: #ffff
+}
+
+#fisk-navn {
+  margin-top: -16px;
+  margin-bottom: 16px;
+  color: #ffff
+}
+
+
+
 #skattekiste {
     position: absolute;
     bottom: 0;
@@ -56,6 +83,7 @@ html, body {
   position: absolute;
   width: 150px;
   transition: translate 2s ease-in-out;   /* får fiskene til at svømme mod kisten indenfor 2s */
+  z-index: 20;
 }
 
 .fisk1 { top: 10%; left: 5%; }

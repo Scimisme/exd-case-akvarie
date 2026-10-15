@@ -1,5 +1,20 @@
 "use strict";
 
+const gulfisk = {
+  navn: "Bubbles",
+  foede: "Alger fra klipper og koraller",
+  levevis: "Koralrev ved Det Indiske Ocean",
+  levealder: "5-10 år",
+  stoerrelse: "15-40 cm",
+  humoer: "Nysgerrig og territorial",
+};
+    document.getElementById("fisk-navn").textContent = gulfisk.navn;
+    document.getElementById("fisk-foede").textContent = gulfisk.foede;
+    document.getElementById("fisk-levevis").textContent = gulfisk.levevis;
+    document.getElementById("fisk-levealder").textContent = gulfisk.levealder;
+    document.getElementById("fisk-stoerrelse").textContent = gulfisk.stoerrelse;
+    document.getElementById("fisk-humoer").textContent = gulfisk.humoer;
+
 console.log("1: scriptet kører");
 const kiste = document.getElementById("skattekiste");
 const link = document.getElementById("skattekisteLink")

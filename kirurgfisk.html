@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bubbles Univers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/kirurgfiskstyle.css">
 </head>
 
@@ -14,6 +17,16 @@
         <a href="../index.html" class="tilbage-knap"> <!--../ BETYDER MAN GÅR EN MAPPE TILBAGE-->
              ← Tilbage til akvariet
         </a>
+
+        <div id="info-kirurgfisk">
+          <button id="luk-info" class="luk-knap" aria-label="Luk"></button>
+          <h1 id="fisk-navn"></h1>
+          <p><strong>Føde:</strong> <span id="fisk-foede"></span></p>
+          <p><strong>Levevis:</strong> <span id="fisk-levevis"></span></p>
+          <p><strong>Levealder:</strong> <span id="fisk-levealder"></span></p>
+          <p><strong>Størrelse:</strong> <span id="fisk-stoerrelse"></span></p>
+          <p><strong>Humør:</strong> <span id="fisk-humoer"></span></p>
+          </div>
 
         <img src="img/kirurgfiskens-univers.svg" 
              alt="Kirurgfiskens Univers"
