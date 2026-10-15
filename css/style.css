@@ -234,10 +234,17 @@ header {
 /*Tilbage knap til index.html*/
 .main-link {
    position: absolute;
-   top: 2vh;
-   left: 2vw;
-   background-color: #ffffff; /*Skal ændres til en global farve*/
-   color: #000000;
+   top:3%;
+   left:3%;
+   z-index: 50;
+   background-color: white;
+   color:#175C77;
+   border-radius: 25px;
+   font-family: Arial, sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 10px 15px;
 }
 
 .sea-anemone-link {
@@ -248,4 +255,33 @@ header {
    height: 16%;
    z-index: 10;
    cursor: pointer;
+}
+
+.intro-tekst {
+   position: absolute;
+   top: 4%;
+   left:50%;
+   transform: translateX(-50%);
+   background-color: azure;
+   padding: 10px 20px;
+   border-radius: 20px;
+   text-align: center;
+   font-family: Arial, sans-serif;
+   z-index: 10;
+}
+
+.blue-fish-info {
+   position: absolute;
+   top: 30vh;
+   left: 30vw;
+   width: min(320px, 90%);
+   padding: 20px;
+   background: white;
+   border-radius: 20px;
+   z-index: 20;
+   font-family: Arial, sans-serif;
+}
+
+.blue-fish-info[hidden] {
+   display: none;
 }

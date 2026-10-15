@@ -165,4 +165,24 @@ fish.forEach(function(fish) {
         }, 2000);
     });
 
+    //Info box til blå fisk
+    const blueFishForInfo = document.getElementById("blueFish");
+    const blueFishInfo = document.getElementById("blue-fish-info");
+    let infoShowTimer;
+    let infoHideTimer;
+
+    blueFishForInfo.addEventListener("click", () => {
+        clearTimeout(infoShowTimer);
+        clearTimeout(infoHideTimer);
+        blueFishInfo.hidden = true;
+
+        infoShowTimer = setTimeout(() => {
+            blueFishInfo.hidden = false;
+
+        infoHideTimer = setTimeout(() => {
+            blueFishInfo.hidden = true;
+            }, 4000);
+        }, 3500);
+    });
+
 });
