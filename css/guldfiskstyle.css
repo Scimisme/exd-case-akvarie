@@ -56,10 +56,15 @@ html, body {
 /*Styling af fiskene (kan justere efter behov */
 .scene {
     position: absolute;
-    top: 40%;
-    left: 10%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.fish4 {
+.fish {
+    position: absolute;
     width: 120px;
+    left: -120px;
 }
