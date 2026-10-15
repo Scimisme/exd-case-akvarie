@@ -18,3 +18,29 @@ function visNat() {
 
 solKnap.addEventListener("click", visDag);
 maaneKnap.addEventListener("click", visNat);
+
+// GULDFISKENS SVØMME-FUNKTION: start
+
+// Hent guldfisken fra HTML
+const guldfisk = document.getElementById("orangeFish");
+
+// Funktion der får guldfisken til at svømme
+function svoem() {
+    guldfisk.animate(
+        [
+            { transform: "translateX(0)" },
+            { transform: "translateX(500px)" }
+        ],
+        {
+            duration: 10000,
+            iterations: Infinity,
+            direction: "alternate",
+            easing: "linear"
+        }
+    );
+}
+
+// Kald funktionen
+svoem();
+
+// GULDFISKENS SVØMME-FUNKTION: slut
