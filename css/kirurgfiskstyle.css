@@ -54,14 +54,16 @@ html, body {
 
 .gulfisk {
   position: absolute;
-  width: 120px;
-  transition: translate 2s ease-in-out;   /* får fiskene til at glide */
+  width: 150px;
+  transition: translate 2s ease-in-out;   /* får fiskene til at svømme mod kisten indenfor 2s */
 }
 
 .fisk1 { top: 10%; left: 5%; }
 .fisk2 { top: 30%; left: 80%; }
 .fisk3 { top: 60%; left: 10%; }
 .fisk4 { top: 80%; left: 90%; }
+
+
 
 /*TILBAGE KNAP*/
 .tilbage-knap {
