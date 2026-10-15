@@ -1,4 +1,20 @@
-"use strict";
+const link = document.getElementById("skattekisteLink");
+const kiste = document.getElementById("skattekiste");
+
+function skiftKiste(event) {
+  if (event.type === "mouseenter") {
+    // Musen hover over: viser den animerede kiste
+    kiste.src = "img/skattekiste-animeret.svg";
+    kiste.classList.add("aktiv");
+  } else {
+    // Ellers vis den statiske kiste
+    kiste.src = "img/skattekiste-statisk.svg";
+    kiste.classList.remove("aktiv");
+  }
+}
+
+link.addEventListener("mouseenter", skiftKiste);
+link.addEventListener("mouseleave", skiftKiste);
 
 //variabler skal opdateres så de matcher med vores egen tabel
 const fish = [
@@ -170,4 +186,3 @@ fish.forEach(function(fish) {
     });
 
 });
-

@@ -7,14 +7,22 @@ const lukInfo = document.querySelector("#luk-info");
 // FOR AT ÅBNE INFORMATIONSBOKSEN 
 rejeKnap.addEventListener("click", () => {
     rejeInfo.hidden = false;
+
+//STOP DEN GAMLE SVØMMEANIMATION
+getSheldon.classList.remove("svommer");
+
+//SHELDON SVØMMER HEN TIL REJERNE
+getSheldon.classList.remove("ved-grotten");
+getSheldon.classList.add("ved-rejerne")
 });
 
 // FOR AT LUKKE INFORMATIONSBOKSEN
 lukInfo.addEventListener("click", () => {
     rejeInfo.hidden = true;
+
+//SHELDON SVØMMER TILBAGE 
+getSheldon.classList.remove("ved-rejerne");
 });
-
-
 
 //GROTTENS INTERAKTIVE ELEMENTER
 const grotteKnap = document .querySelector("#grotte-knap");
@@ -25,11 +33,21 @@ const lukGrotte = document.querySelector("#luk-grotte");
 grotteKnap.addEventListener("click", () => {
     grotteInfo.hidden = false;
     rejeInfo.hidden = true;        //Lukker reje-info boksen, hvis den er åben
+
+//STOP DEN GAMLE SVØMMEANIMATION
+getSheldon.classList.remove("svommer");
+
+//SHELDON SVØMMER HEN TIL GROTTEN 
+getSheldon.classList.remove("ved-rejerne");
+getSheldon.classList.add("ved-grotten")
 });
 
 // FOR AT LUKKE INFORMATIONSBOKSEN
 lukGrotte.addEventListener("click", () => {
     grotteInfo.hidden = true;
+
+//SHELDON SVØMMER TILBAGE 
+getSheldon.classList.remove("ved-grotten");
 });
 
 //HER HAR JEG HENTET SHELDON FRA HTML'EN, SÅ JEG KAN LAVE EN EVENTLISTENER PÅ HAM
@@ -49,6 +67,27 @@ lukSheldon.addEventListener("click", () => {
     getSheldon.classList.remove ("svommer");
 });
 
+//DEN GULE SØHEST 
+const gulSoehestKnap = document .querySelector("#gul-soehest-knap");
+const gulSoehestInfo = document.querySelector("#gul-soehest-info");
+const lukGulSoehest = document.querySelector("#luk-gul-soehest");
 
+//ÅBEN FAKTABOKS
+gulSoehestKnap.addEventListener("click", () => {
+    gulSoehestInfo.hidden = false;
 
+//STOPPE GAMMEL ANIMATION
+ getSheldon.classList.remove("svommer");
 
+ //FJERNE DE ANDRE POSITIONER
+  getSheldon.classList.remove("ved-rejerne", "ved-grotten");
+
+  //SVØM HEN TIL DEN GULE SØHEST
+   getSheldon.classList.add("ved-gul-soehest");
+});
+
+//LUK FAKTABOKSEN
+lukGulSoehest.addEventListener("click", () => {
+    gulSoehestInfo.hidden = true;
+    getSheldon.classList.remove("ved-gul-soehest");
+});

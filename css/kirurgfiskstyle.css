@@ -1,0 +1,85 @@
+/* Reset CSS */
+
+/* KIRURGFISKENS UNIVERS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fjern scrolling */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*HELE SKÆRMEN*/
+.main {
+   width: 100vh;
+   height: 100dvh;
+   overflow: hidden;
+   position: relative;
+}
+
+#kirurgfisk-baggrund {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    object-position: center bottom;
+}
+
+#skattekiste {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 600px; 
+    height: auto;
+}
+
+#skattekiste.aktiv {
+  transform: scale(1.2);
+   bottom: 120px;
+   left: 48%;
+}
+
+#fiskeSamling {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;   /* fiskene må ikke blokere for musen over kisten */
+}
+
+.gulfisk {
+  position: absolute;
+  width: 150px;
+  transition: translate 2s ease-in-out;   /* får fiskene til at svømme mod kisten indenfor 2s */
+}
+
+.fisk1 { top: 10%; left: 5%; }
+.fisk2 { top: 30%; left: 80%; }
+.fisk3 { top: 60%; left: 10%; }
+.fisk4 { top: 80%; left: 90%; }
+
+
+
+/*TILBAGE KNAP*/
+.tilbage-knap {
+    position: absolute;
+    top:3%;
+    left:3%;
+    z-index: 50;
+
+    background-color: white;
+    color:#175C77;
+    border-radius: 25px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    padding: 10px 15px;}
+

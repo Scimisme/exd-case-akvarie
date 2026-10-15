@@ -1,0 +1,349 @@
+
+
+/* FJERNER STANDARTAFSTANDE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fjern scrolling - GØR SIDEN LIGESÅ STOR SOM SKÆRMEN */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*HELE UNDERVANDSUNIVERSET*/
+main {
+   width: 100%;
+   height: 100dvh;
+   overflow: hidden;
+   position: relative; /*UDGANGSPUNKT FOR ELEMENTERNES PLACERING*/
+}
+
+/*BAGGRUNDSBILLEDET FYLDER HELE SKÆRMEN*/
+.baggrund {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*FYLDER OMRÅDET UDEN AT FORVRÆNGE BILLEDET*/
+    position: absolute;
+    object-position: center bottom;
+}
+
+
+
+
+/*INTRODUKTION TIL BØRN*/
+.intro-tekst {
+    position: absolute;
+    top: 4%;
+    left:50%;
+    transform: translateX(-50%); /*CENTRERER BOKSEN VANDRET*/
+
+    background-color: azure;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    text-align: center;
+    font-family: Arial, sans-serif;
+    z-index: 10; /*PLACERER BOKSEN FORAN BAGGRUNDEN*/
+}
+
+/*OVERSKRIFTEN I INTORDUKTION*/
+.intro-tekst h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+/*TEKSTEN UNDER OVERSKRIFTEN*/
+.intro-tekst p {
+    font-size: 14px;
+}
+
+
+
+/*SPØRGSMÅLSTEGN OG KNAPPER*/
+/*FÆLLES STYLING TIL DE 3 KLIKBARE OMRRÅDER*/
+#reje-knap,
+#grotte-knap,
+#gul-soehest-knap {
+    position: absolute;
+    border: none; /*FJERNER STANDARTKANTEN*/
+    z-index: 10;
+    cursor: pointer; /*VISER EN HÅND VED HOVER*/
+    background: transparent;
+    padding: 0;
+}
+
+/*KLIKBART OMRÅDE VED REJERNE*/
+#reje-knap {
+    right: 2%;
+    bottom: -5%;
+    width: 25%;
+    height: 20%;
+
+    display: flex;
+    justify-content: center; /*CENTRERER ? VANDRET*/
+    align-content: flex-end; /*PLACERER DET NEDERST*/
+}
+
+/*KLIKBART OMRÅDE VED GROTTEN*/
+#grotte-knap {
+    left: 3%;
+    bottom: 25%;
+    width: 55%;
+    height: 55%;
+
+    display: flex;
+    justify-content: center; /*CENTRERER ? VANDRET*/
+    align-items: center;
+}
+
+/*SPØRGSMÅLSTEGN VED DEN GULE SØHEST*/
+#gul-soehest-knap {
+    top: 50%;
+    right: 22%;
+}
+
+/*ALLE 3 SPØRGSMÅLSTEGN HAR SAMME DESIGN*/
+.spørgsmålstegn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+    min-height: 55px;
+    min-width: 55px;
+    flex-shrink: 0;
+
+
+    color: white;
+    background-color: #a12f2f;
+    border: 4px solid white;
+    border-radius: 50%; /*GØR SPØRGSMÅLSTEGNET RUNDT*/
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+/*FAKTABOKSE*/
+/*FÆLLES DESIGN TIL ALLE FAKTABOKSE*/
+.info-boks {
+    position: absolute;
+    right: 5%;
+    bottom: 18%;
+
+    width: 320px;
+    padding: 20px;
+    max-width: 90%;
+
+    background-color:white;
+    border-radius: 20px;
+    z-index: 20;
+    font-family: arial, sans-serif;
+}
+
+/*SKJULER FAKTABOKSE OG SHELDONS TALEBOBLE, NÅR HTML ATTRIBUTTEN HIDDEN ER TIL STEDE*/
+.info-boks[hidden],
+#sheldon-info [hidden] {
+    display: none;
+}
+
+/*AFSTAND MELLEM OVERSKRIFT OG TEKST*/
+.info-boks h2 {
+    margin-bottom: 15px;
+}
+
+/*AFSTANDEN MELLEM DE 2 TEKSTFSNIT*/
+.info-boks p + p {
+    margin-top: 20px;
+}
+
+/*FAKTABOKS VED GROTTEN*/
+#grotte-info {
+    left:35%;
+    right: auto;
+    bottom: 40%;
+}
+
+/*FAKTABOKS VED DEN GULE SØHEST*/
+#gul-soehest-info {
+    top: 25%;
+    left: 65%;
+    width: 280px;
+
+    bottom: auto;
+    right: auto;
+}
+
+
+
+/*LUKKEKNAPPER X*/
+/*ALLE KRYDSER HAR SAMME STYLING - DERFOR KAN MAN SKRIVE KODEN EN GANG*/
+#luk-info,
+#luk-grotte,
+#luk-gul-soehest,
+#luk-sheldon {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*SHELDONS PLACERING*/
+/*SHELDON STARTER ØVERST TIL VENSTRE*/
+#sheldon {
+    position: absolute;
+    width: 150px;
+    z-index: 30;
+    top:10%;
+    left: 10%;
+
+    cursor: pointer;
+
+    /*DETTE SPEJLVENDER HAM*/
+    transform: scaleX(-1);
+
+    transition: top 2s ease-in-out, left 2s ease-in-out; /*AT SHELDON BEVÆGER SIG GLIDENDE MELLEM FORSKELLIGE POSITIONER*/
+}
+
+/*SHELDONS PLACERINGER VED SPØRGSMÅLSTEGNENE*/
+/*SHELDON SVØMMER HEN TIL GROTTEN*/
+#sheldon.ved-grotten {
+    top: 50%;
+    left: 20%;
+}
+
+/*SHELDON SVØMMER HEN TIL REJERNE*/
+#sheldon.ved-rejerne {
+    top: 55%;
+    left: 65%;
+}
+
+/*SHELDON SVØMMER HEN TIL SØHEST*/
+#sheldon.ved-gul-soehest {
+    top: 40%;
+    left: 65%;
+}
+
+/*SHELDONS ANIMATIONER*/
+/*ANIMATION AF SHELDON OG BESTEMMELSE AF HVORDAN HAN SVØMMER*/
+.svommer {
+    animation: svomme 2s ease-in-out infinite;
+}
+
+@keyframes svomme {
+    0% { transform: translateY(0); 
+    }
+
+    50% { transform: translateY(-30px); 
+    }
+}
+
+/*SHELDON VIPPER, NÅR HAN ER VED ET AF DE 3 OMRÅDER*/
+/*SHELDON VIPPER MENS HAN SVØMMER*/
+#sheldon.ved-rejerne,
+#sheldon.ved-gul-soehest,
+#sheldon.ved-grotten {
+    animation: sheldon-vipper 1s ease-in-out infinite alternate;
+}
+
+@keyframes sheldon-vipper {
+    from { 
+        rotate: -8deg;
+    }
+
+    to {
+        rotate: 8deg;
+    }
+}
+
+/*SHELDONS AURA VISES KUN, NÅR HAN ER PÅ SIN STARTPLADS*/
+/*AURAEN PULSERER - SKIFTER MELLEM LILLE OG EN STOR BLÅ GLØD*/     
+@keyframes sheldon-aura {
+    from {
+        filter:drop-shadow(0 0 2px #7eeaff);
+    }
+
+    to {
+        filter:drop-shadow(0 0 12px #7eeaff)
+                drop-shadow(0 0 3px #ffffff)
+                drop-shadow(0 0 22px #38d9ff);
+    }
+}
+
+
+/*DEN HVIDE BOKS KOMMER FREM, NÅR MAN KLIKKER PÅ SHELDON*/
+/*SHELDONS TALEBOBLE*/
+#sheldon-info {
+    position:absolute;
+    top:10%;
+    left:20%;
+    width: 280px;
+    padding: 20px;
+
+    background-color:white;
+    border-radius: 20px;
+
+    font-family: arial, sans-serif;
+    z-index: 20;
+}
+
+/*AFSTAND UNDER TALEBOBLENS OVERSKRIFT*/
+#sheldon-info .sheldon-overskrift {
+    margin-bottom: 20px;
+}
+
+/*AFSTAND UNDER TALEBOBLENS OVERSKRIFT*/
+#sheldon-info .sheldon-velkommen {
+    margin-bottom: 15px;
+}
+
+/*STYLING AF TEKSTEN INDE I TALEBOBLEN*/
+#sheldon-info p {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+/*TILBAGEKNAP*/
+.tilbage-knap {
+    position: absolute;
+    top:3%;
+    left:3%;
+    z-index: 50;
+
+    background-color: white;
+    color:#175C77;
+    border-radius: 25px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    padding: 10px 15px;
+}
+
+/*ÆNDRER FARVE, NÅR MAN AKTIVERER LINKET*/
+.tilbage-knap:active {
+    background-color: #D6F3FA; 
+}
+
+
+
+
+
+
+
