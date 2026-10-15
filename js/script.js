@@ -1,16 +1,18 @@
+"use strict";
+
 const link = document.getElementById("skattekisteLink");
 const kiste = document.getElementById("skattekiste");
 
 function skiftKiste(event) {
-  if (event.type === "mouseenter") {
-    // Musen hover over: viser den animerede kiste
-    kiste.src = "img/skattekiste-animeret.svg";
-    kiste.classList.add("aktiv");
-  } else {
-    // Ellers vis den statiske kiste
-    kiste.src = "img/skattekiste-statisk.svg";
-    kiste.classList.remove("aktiv");
-  }
+    if (event.type === "mouseenter") {
+        // Musen hover over: viser den animerede kiste
+        kiste.src = "img/skattekiste-animeret.svg";
+        kiste.classList.add("aktiv");
+    } else {
+        // Ellers vis den statiske kiste
+        kiste.src = "img/skattekiste-statisk.svg";
+        kiste.classList.remove("aktiv");
+    }
 }
 
 link.addEventListener("mouseenter", skiftKiste);
@@ -138,31 +140,4 @@ fish.forEach(function(fish) {
    getFishElem.addEventListener("click", function() {
       playSound(fish)
    });
-
-   //Starter animation af blå fisk ved klik
-   const blueFishImage = document.getElementById("blueFish");
-    let blueFishTimer;
-
-    blueFishImage.addEventListener("click", function() {
-        blueFishImage.src = "img/blue_fish_interactive_animation.svg";
-
-        clearTimeout(blueFishTimer);
-        blueFishTimer = setTimeout(function() {
-            blueFishImage.src = "img/blue_fish.svg";
-        }, 5000);
-    });
-
-     //Starter animation af blå fisk ved klik
-    const clownFishImage = document.getElementById("clownFish");
-    let clownFishTimer;
-
-    clownFishImage.addEventListener("click", function() {
-        clownFishImage.src = "img/klovnfisk_interactive_animation.svg";
-
-        clearTimeout(clownFishTimer);
-        clownFishTimer = setTimeout(function() {
-            clownFishImage.src = "img/clown_fish.svg";
-        }, 2000);
-    });
-
 });
