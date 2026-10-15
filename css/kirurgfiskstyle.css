@@ -82,7 +82,7 @@ html, body {
 .gulfisk {
   position: absolute;
   width: 150px;
-  transition: translate 2s ease-in-out;   /* får fiskene til at svømme mod kisten indenfor 2s */
+  transition: translate 2s ease-in-out;
   z-index: 20;
 }
 
@@ -91,13 +91,13 @@ html, body {
 .fisk3 { top: 60%; left: 10%; }
 .fisk4 { top: 80%; left: 90%; }
 
-/* ---------- Fiskene kan klikkes ---------- */
+/* Fiskene kan klikkes */
 .gulfisk {
-  pointer-events: auto;   /* overskriver det nedarvede "none" */
+  pointer-events: auto;  
   cursor: pointer;        /* musen bliver til en hånd */
 }
 
-/* ---------- Infoboksen er skjult til at starte med ---------- */
+/* Infoboksen er skjult til at starte med */
 #info-kirurgfisk {
   opacity: 0;
   visibility: hidden;
@@ -113,7 +113,7 @@ html, body {
   z-index: 30;
 }
 
-/* Lukkeknappen i hjørnet (den er tom i din HTML, så krydset laves her) */
+/* Lukkeknappen i hjørnet */
 .luk-knap {
   position: absolute;
   top: 10px;
