@@ -34,6 +34,7 @@ function svoem() {
         {
             duration: 15000,
             iterations: Infinity,
+            direction: "alternate-reverse",
             easing: "linear"
         }
     );
