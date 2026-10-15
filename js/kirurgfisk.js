@@ -2,11 +2,11 @@
 
 const gulfisk = {
   navn: "Bubbles",
-  foede: "Alger fra klipper og koraller",
-  levevis: "Koralrev ved Det Indiske Ocean",
-  levealder: "5-10 år",
-  stoerrelse: "15-40 cm",
-  humoer: "Nysgerrig og territorial",
+  foede: "Kirurgfisken, Bubbles spiser alger fra klipper og koraller",
+  levevis: "Han lever i Koralrev ved Det Indiske Ocean",
+  levealder: "Han bliver mellem 5-10 år",
+  stoerrelse: "Han kan blive mellem 15-40 cm stor",
+  humoer: "Bubbles er nysgerrig og lidt territorial overfor deres hjem",
 };
     document.getElementById("fisk-navn").textContent = gulfisk.navn;
     document.getElementById("fisk-foede").textContent = gulfisk.foede;
@@ -74,6 +74,33 @@ function svoemHenTilKiste(event) {
   }
 }
 
-// Fiskene svømmer
+
 kiste.addEventListener("mouseenter", svoemHenTilKiste);
 kiste.addEventListener("mouseleave", svoemHenTilKiste);
+
+// ---------- Infoboks ved klik på en fisk ----------
+const infoBoks = document.getElementById("info-kirurgfisk");
+const lukKnap = document.getElementById("luk-info");
+const alleFisk = document.querySelectorAll(".gulfisk");
+
+function visInfo(event) {
+  infoBoks.classList.add("synlig");
+}
+
+function skjulInfo() {
+  infoBoks.classList.remove("synlig");
+}
+
+// Klik på en fisk viser boksen
+alleFisk.forEach((enFisk) => {
+  enFisk.addEventListener("click", visInfo);
+});
+
+lukKnap.addEventListener("click", skjulInfo);
+
+// Escape lukker den også
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    skjulInfo();
+  }
+});
