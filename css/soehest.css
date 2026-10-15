@@ -150,7 +150,7 @@ main {
 
 /*SKJULER FAKTABOKSE OG SHELDONS TALEBOBLE, NÅR HTML ATTRIBUTTEN HIDDEN ER TIL STEDE*/
 .info-boks[hidden],
-#sheldon-info [hidden] {
+#sheldon-info[hidden] {
     display: none;
 }
 
@@ -243,7 +243,7 @@ main {
 }
 
 @keyframes svomme {
-    0% { transform: translateY(0); 
+    0%, 100% { transform: translateY(0); 
     }
 
     50% { transform: translateY(-30px); 
@@ -268,19 +268,6 @@ main {
     }
 }
 
-/*SHELDONS AURA VISES KUN, NÅR HAN ER PÅ SIN STARTPLADS*/
-/*AURAEN PULSERER - SKIFTER MELLEM LILLE OG EN STOR BLÅ GLØD*/     
-@keyframes sheldon-aura {
-    from {
-        filter:drop-shadow(0 0 2px #7eeaff);
-    }
-
-    to {
-        filter:drop-shadow(0 0 12px #7eeaff)
-                drop-shadow(0 0 3px #ffffff)
-                drop-shadow(0 0 22px #38d9ff);
-    }
-}
 
 
 /*DEN HVIDE BOKS KOMMER FREM, NÅR MAN KLIKKER PÅ SHELDON*/
