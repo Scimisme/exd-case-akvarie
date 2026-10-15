@@ -29,17 +29,15 @@ function svoem() {
     guldfisk.animate(
         [
             { transform: "translateX(0)" },
-            { transform: "translateX(500px)" }
+            { transform: "translateX(1500px)" }
         ],
         {
-            duration: 10000,
+            duration: 15000,
             iterations: Infinity,
-            direction: "alternate",
             easing: "linear"
         }
     );
 }
-
 // Kald funktionen
 svoem();
 
