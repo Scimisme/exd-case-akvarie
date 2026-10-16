@@ -258,9 +258,9 @@ header {
 
 #guldfiskLink {
   position: absolute;
-  bottom: 1%;
-  left: 50%;
-  width: 250px;
+  bottom: 2%;
+  left: 49%;
+  width: 300px;
   display: block;
   z-index: 10;
 }
