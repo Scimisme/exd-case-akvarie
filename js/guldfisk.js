@@ -11,7 +11,7 @@ const lukNatInfo = document.getElementById("luk-nat-info");
 
 // Min funktion til at skifte til dag - hvor min faktaboks er skjult
 function visDag() {
-  billede.src = "/img/guld-dag.svg";
+  billede.src = "img/guld-dag.svg";
 
   guldfisk.forEach(function(fisk) {
         fisk.src = "img/guldfisk.svg";
@@ -23,7 +23,7 @@ function visDag() {
 
 // Min funktion til at skifte til nat - hvor min faktaboks bliver synlig
 function visNat() {
-  billede.src = "/img/guld-nat.svg";
+  billede.src = "img/guld-nat.svg";
 
   guldfisk.forEach(function(fisk) {
         fisk.animation.pause();
