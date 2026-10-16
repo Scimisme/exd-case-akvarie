@@ -9,11 +9,21 @@ const billede = document.getElementById("guld-baggrund");
 // Min funktion til at skifte til dag
 function visDag() {
   billede.src = "/img/guld-dag.svg";
+
+  guldfisk.forEach(function(fisk) {
+        fisk.src = "img/guldfisk.svg";
+        fisk.animation.play();
+    });
 }
 
 // Min funktion til at skifte til nat
 function visNat() {
   billede.src = "/img/guld-nat.svg";
+
+  guldfisk.forEach(function(fisk) {
+        fisk.animation.pause();
+        fisk.src = "img/guldfisk-nat.svg";
+    });
 }
 
 solKnap.addEventListener("click", visDag);
@@ -31,7 +41,7 @@ fisk.style.top = (25 + index * 20) + "%";
 // Hver anden fisk svømmer i modsat retning
 if (index % 2 === 0) { // Fra venstre mod højre
     fisk.style.left = "-120px";
-fisk.animate(
+const animation = fisk.animate(
 [
     { transform: "translateX(0) scaleX(-1)" },
     { transform: `translateX(${window.innerWidth + 120}px) scaleX(-1)` }
@@ -45,7 +55,7 @@ fisk.animate(
 );
 } else { // Fra højre mod venstre
     fisk.style.left = "100%";
-fisk.animate(
+const animation = fisk.animate(
 [
     { transform: "translateX(0)" },
     { transform: `translateX(-${window.innerWidth + 120}px)` }
