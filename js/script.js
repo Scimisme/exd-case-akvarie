@@ -113,7 +113,7 @@ function showTooltip(fish) {
 
     getTooltip.innerHTML = `
          <strong>${fish.id} (${fish.name})</strong><br>
-         Længde: ${fish.size}<br>
+         Størrelse: ${fish.size} lang<br>
          Levealder: ${fish.lifespan}<br>
          Levested: ${fish.habitat}<br>
     `;
