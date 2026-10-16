@@ -139,28 +139,22 @@ function playSound(fish) {
 
 //forEach loop, der går igennem alle fiskene i fish-arrayet
 fish.forEach(function(fish) {
-const getFishElem = document.getElementById(fish.id);
 
-    // Eksempel: hent fiskens <img> ved hjælp af id'et fra dataen
-   const getFishElem = document.getElementById(fish.elementId);
+    // Hent fisken fra HTML
+    const getFishElem = document.getElementById(fish.elementId);
 
-   if (!getFishElem) {
-      throw new Error(`Could not find fish element with id "${fish.elementId}"`);
-   }
+    // Tjek om fisken findes i HTML
+    if (getFishElem) {
 
-    // Eksempel: når musen kommer ind over bilen, vises bilens informationer.
-    // Nyt i dag: "mouseenter" er en ny event - ligesom "click", bare når musen kommer ind over elementet.
-   getFishElem.addEventListener("mouseenter", function() {
-        showTooltip(fish);
-   });
-// Tjek om fisken findes i HTML
-if (getFishElem) {
-    getFishElem.addEventListener("mouseenter", function() {
+        // Vis information ved hover
+        getFishElem.addEventListener("mouseenter", function() {
             showTooltip(fish);
-});
-getFishElem.addEventListener("click", function() {
-playSound(fish);
-});
+        });
+
+        // Afspil lyd ved klik
+        getFishElem.addEventListener("click", function() {
+            playSound(fish);
+        });
 
     }
 });
