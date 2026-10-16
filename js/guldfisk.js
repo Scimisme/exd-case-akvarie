@@ -25,7 +25,6 @@ const guldfisk = document.querySelectorAll(".fish");
 
 // Få alle guldfiskene til at svømme - index afgør hvilken numme fisk der er tale om 
 guldfisk.forEach(function(fisk, index) {
-
 // Placering på skærmen - startplacering, næste fisk (index-rækkefølgen) sættes efter 20 ift. første fisk, vel og mærke i procent
 fisk.style.top = (25 + index * 20) + "%";
 
