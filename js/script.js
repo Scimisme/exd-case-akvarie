@@ -92,7 +92,7 @@ const fish = [
 
 //forEach loop, der går igennem alle fiskene i fish-arrayet og logger deres navn og art til konsollen
 fish.forEach(function(fishObj) {
-    console.log(`${fishObj.name} (${fishObj.species})`);
+    console.log(`${fishObj.id} (${fishObj.name})`);
 });
 
 //getters for DOM elementer
@@ -106,9 +106,9 @@ let tooltipTimer;
 function showTooltip(fish) {
 
     getTooltip.innerHTML = `
-         <strong>${fish.name} (${fish.species})</strong><br>
-         Længde: ${fish.length} cm<br>
-         Vægt: ${fish.weight} kg<br>
+         <strong>${fish.id} (${fish.name})</strong><br>
+         Længde: ${fish.size}<br>
+         Levealder: ${fish.lifespan}<br>
          Levested: ${fish.habitat}<br>
     `;
 
