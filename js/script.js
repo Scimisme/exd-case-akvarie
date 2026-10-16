@@ -141,3 +141,22 @@ fish.forEach(function(fish) {
       playSound(fish)
    });
 });
+
+const link = document.getElementById("guldfiskLink");
+const sandslot = document.getElementById("sandslot");
+
+function skiftSlot(event) {
+console.log("Event:", event.type);
+    if (event.type === "mouseenter") {
+        // Musen hover over: viser den animerede kiste
+        sandslot.src = "img/sandslot.svg";
+        sandslot.classList.add("aktiv");
+    } else {
+        // Ellers vis den statiske kiste
+        sandslot.src = "img/sandslotstatisk.svg";
+        sandslot.classList.remove("aktiv");
+    }
+}
+
+link.addEventListener("mouseenter", skiftSlot);
+link.addEventListener("mouseleave", skiftSlot);
