@@ -21,71 +21,78 @@ link.addEventListener("mouseleave", skiftKiste);
 //variabler skal opdateres så de matcher med vores egen tabel
 const fish = [
     {
-        id: "blueFish",
-        name: "Blå Fisk",
-        species: "Torsk",
-        length: 30,
-        weight: 2.5,
-        habitat: "Havet",
-        sound: "sound/blue-fish-sound.wav"
+        id: "Palettkirurg",
+        superpower: "Har mikroskopiske giftige knive i halen",
+        diet: "Krebsdyr og krill",
+        habitat: "Koralrev",
+        color: "Blå og gul",
+        name: "Dory",
+        lifespan: "8 til 30 år",
+        size: "25 til 30 cm",
+        mood: "Fredelig og rolig"
     },
-
     {
-        id: "clownFish",
-        name: "Klovnefisk",
-        species: "Klovnefisk",
-        length: 15,
-        weight: 0.5,
-        habitat: "Rødt koralrev",
-        sound: "sound/clown-fish-sound.wav"
+        id: "Klovnfisk",
+        superpower: "Immun overfor giftige planter",
+        diet: "Krebsdyr og alger",
+        habitat: "Søanemoner",
+        color: "Orange, sort og hvid",
+        name: "Nemo",
+        lifespan: "6 til 10 år",
+        size: "8 til 11 cm",
+        mood: "Modig og frygtløs"
     },
-
     {
-        id: "greenFish",
-        name: "Grøn Fisk",
-        species: "Grøn Fisk",
-        length: 25,
-        weight: 1.5,
-        habitat: "Havet",
-        sound: "sound/green-fish-sound.wav"
+        id: "søstjerne",
+        superpower: "Gro nye armer",
+        diet: "Blåmuslinger",
+        habitat: "Alle verdenshave, bare ikke ferskvand",
+        color: "Mange forskellige farver",
+        name: "Peach",
+        lifespan: "5 til 10 år",
+        size: "5 til 15 cm",
+        mood: "Udholdende og rolig"
     },
-
     {
-        id: "orangeFish",
-        name: "Orange Fisk",
-        species: "Orange Fisk",
-        length: 20,
-        weight: 1.0,
-        habitat: "Havet",
-        sound: "sound/orange-fish-sound.wav"
+        id: "Guldfisk",
+        superpower: "Sover med åbne øjne",
+        diet: "Planter og smådyr",
+        habitat: "Ferskvandsområder i Østasien",
+        color: "Orange",
+        name: "Goldie",
+        lifespan: "10 til 20 år",
+        size: "20 til 35 cm",
+        mood: "Social, aktiv"
     },
-
     {
-        id: "redFish",
-        name: "Rød Fisk",
-        species: "Rød Fisk",
-        length: 35,
-        weight: 3.0,
-        habitat: "Havet",
-        sound: "sound/red-fish-sound.wav"
+        id: "Søhest",
+        superpower: "Kan gøre sig selv usynlig",
+        diet: "Små rejer",
+        habitat: "Tangområder",
+        color: "Forskellige farver",
+        name: "Sheldon",
+        lifespan: "1 til 5 år",
+        size: "2 til 20 cm",
+        mood: "Legesyg og glad"
     },
- 
     {
-        id: "yellowFish",
-        name: "Gul Fisk",
-        species: "Gul Fisk",
-        length: 18,
-        weight: 0.8,
-        habitat: "Havet",
-        sound: "sound/yellow-fish-sound.wav"
-    },
+        id: "Kirurgfisk",
+        superpower: "Hurtig algsstøvsuger",
+        diet: "Alger fra klipper og koraller",
+        habitat: "Koralrev ved Det Indiske Ocean",
+        color: "Gul",
+        name: "Bubbles",
+        lifespan: "5 til 10 år",
+        size: "15 til 40 cm",
+        mood: "Nysgerrig men territorial"
+    }
 ];
 
 
 
 //forEach loop, der går igennem alle fiskene i fish-arrayet og logger deres navn og art til konsollen
 fish.forEach(function(fishObj) {
-    console.log(`${fishObj.name} (${fishObj.species})`);
+    console.log(`${fishObj.id} (${fishObj.name})`);
 });
 
 //getters for DOM elementer
@@ -99,9 +106,9 @@ let tooltipTimer;
 function showTooltip(fish) {
 
     getTooltip.innerHTML = `
-         <strong>${fish.name} (${fish.species})</strong><br>
-         Længde: ${fish.length} cm<br>
-         Vægt: ${fish.weight} kg<br>
+         <strong>${fish.id} (${fish.name})</strong><br>
+         Længde: ${fish.size}<br>
+         Levealder: ${fish.lifespan}<br>
          Levested: ${fish.habitat}<br>
     `;
 

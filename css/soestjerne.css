@@ -33,6 +33,14 @@ html, body{
     object-position: center bottom;
 }
 
+#soestjerne {
+    position: absolute;
+    bottom: 340px;
+    left: 2%;
+    width: 200px; 
+    height: auto;
+}
+
 /*knap der går tilbage til forsiden*/
 .tilbage-knap{
     position: absolute;
