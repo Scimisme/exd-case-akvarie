@@ -187,3 +187,22 @@ function skiftSlot(event) {
 
 guldfiskLink.addEventListener("mouseenter", skiftSlot);
 guldfiskLink.addEventListener("mouseleave", skiftSlot);
+
+//Sø anemone
+const anemoneLink = document.getElementById("sea-anemone-link");
+const anemone = document.getElementById("sea_anemone");
+
+function skiftAnemone(event) {
+    if (event.type === "mouseenter") {
+        // Musen hover over: viser den animerede anemone
+        anemone.src = "img/sea_anemone.svg";
+        anemone.classList.add("aktiv");
+    } else {
+        // Ellers vis den statiske anemone
+        anemone.src = "img/sea_anemone_alt.svg";
+        anemone.classList.remove("aktiv");
+    }
+}
+
+anemoneLink.addEventListener("mouseenter", skiftAnemone);
+anemoneLink.addEventListener("mouseleave", skiftAnemone);
