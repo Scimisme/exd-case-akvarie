@@ -21,6 +21,7 @@ link.addEventListener("mouseleave", skiftKiste);
 //variabler skal opdateres så de matcher med vores egen tabel
 const fish = [
     {
+        elementId: "blueFish",
         id: "Palettkirurg",
         superpower: "Har mikroskopiske giftige knive i halen",
         diet: "Krebsdyr og krill",
@@ -32,6 +33,7 @@ const fish = [
         mood: "Fredelig og rolig"
     },
     {
+        elementId: "clownFish",
         id: "Klovnfisk",
         superpower: "Immun overfor giftige planter",
         diet: "Krebsdyr og alger",
@@ -43,6 +45,7 @@ const fish = [
         mood: "Modig og frygtløs"
     },
     {
+        elementId: "greenFish",
         id: "søstjerne",
         superpower: "Gro nye armer",
         diet: "Blåmuslinger",
@@ -54,6 +57,7 @@ const fish = [
         mood: "Udholdende og rolig"
     },
     {
+        elementId: "orangeFish",
         id: "Guldfisk",
         superpower: "Sover med åbne øjne",
         diet: "Planter og smådyr",
@@ -65,6 +69,7 @@ const fish = [
         mood: "Social, aktiv"
     },
     {
+        elementId: "blueseahorse",
         id: "Søhest",
         superpower: "Kan gøre sig selv usynlig",
         diet: "Små rejer",
@@ -76,6 +81,7 @@ const fish = [
         mood: "Legesyg og glad"
     },
     {
+        elementId: "yellowFish",
         id: "Kirurgfisk",
         superpower: "Hurtig algsstøvsuger",
         diet: "Alger fra klipper og koraller",
@@ -135,6 +141,18 @@ function playSound(fish) {
 fish.forEach(function(fish) {
 const getFishElem = document.getElementById(fish.id);
 
+    // Eksempel: hent fiskens <img> ved hjælp af id'et fra dataen
+   const getFishElem = document.getElementById(fish.elementId);
+
+   if (!getFishElem) {
+      throw new Error(`Could not find fish element with id "${fish.elementId}"`);
+   }
+
+    // Eksempel: når musen kommer ind over bilen, vises bilens informationer.
+    // Nyt i dag: "mouseenter" er en ny event - ligesom "click", bare når musen kommer ind over elementet.
+   getFishElem.addEventListener("mouseenter", function() {
+        showTooltip(fish);
+   });
 // Tjek om fisken findes i HTML
 if (getFishElem) {
     getFishElem.addEventListener("mouseenter", function() {
