@@ -1,6 +1,6 @@
 "use strict";
 
-// DAG OG NAT
+// DAG OG NAT + SPØRGSMÅLSTEGNET
 // Hent elementerne fra HTML
 const solKnap = document.getElementById("solKnap");
 const maaneKnap = document.getElementById("maaneKnap");
@@ -17,11 +17,9 @@ function visDag() {
         fisk.src = "img/guldfisk.svg";
         fisk.animation.play();
     });
-}
-
-// SKJULER SPØRGSMÅLSTEGN OG FAKTABOKS
     natKnap.hidden = true;
     natInfo.hidden = true;
+}
 
 // Min funktion til at skifte til nat - hvor min faktaboks bliver synlig
 function visNat() {
@@ -31,11 +29,21 @@ function visNat() {
         fisk.animation.pause();
         fisk.src = "img/guldfisk-nat.svg";
     });
-}
 
 natKnap.hidden = false;
+}
+
 solKnap.addEventListener("click", visDag);
 maaneKnap.addEventListener("click", visNat);
+
+natKnap.addEventListener("click", function() {
+    natInfo.hidden = false;
+});
+
+// LUKKER FAKTABOKSEN VED KLIK PÅ X
+lukNatInfo.addEventListener("click", function() {
+    natInfo.hidden = true;
+});
 
 // GULDFISK
 // Hent alle guldfiskene
@@ -81,12 +89,3 @@ fisk.animation = animation;
 }
 });
 // GULDFISKENS SVØMME-FUNKTION: slut
-
-natKnap.addEventListener("click", function() {
-    natInfo.hidden = false;
-});
-
-// LUKKER FAKTABOKSEN VED KLIK PÅ X
-lukNatInfo.addEventListener("click", function() {
-    natInfo.hidden = true;
-});
