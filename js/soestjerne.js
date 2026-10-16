@@ -26,10 +26,10 @@ blueFishForInfo.blueFishForInfo.addEventListener("click", () => {
   const soestjerne = document.getElementById("soestjerne");
 const stadier = 
     [
-    "img/soestjerne1", 
-    "img/soestjerne2", 
-    "img/soestjerne3", 
-    "img/soestjerne4" 
+    "img/soestjerne1.svg", 
+    "img/soestjerne2.svg", 
+    "img/soestjerne3.svg", 
+    "img/soestjerne4.svg" 
     ];
 
     stadier.forEach((sti) => {
