@@ -53,6 +53,8 @@ const animation = fisk.animate(
         delay: index * 3000
     }
 );
+fisk.animation = animation;
+
 } else { // Fra højre mod venstre
     fisk.style.left = "100%";
 const animation = fisk.animate(
@@ -67,6 +69,7 @@ const animation = fisk.animate(
         delay: index * 3000
     }
     );
+fisk.animation = animation; 
 }
 });
 // GULDFISKENS SVØMME-FUNKTION: slut
