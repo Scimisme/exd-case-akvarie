@@ -81,3 +81,67 @@ html, body {
     text-decoration: none;
 
     padding: 10px 15px;}
+
+/* SPØRGSMÅLSTEGN OM NATTEN */
+#nat-knap {
+    position: absolute;
+    right: 22%;
+    top: 50%;
+
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+}
+
+/* DESIGN AF SPØRGSMÅLSTEGN */
+.spørgsmålstegn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 55px;
+    height: 55px;
+
+    color: white;
+    background-color: #a12f2f;
+    border: 4px solid white;
+    border-radius: 50%;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* FAKTABOKS */
+.info-boks {
+    position: absolute;
+    right: 5%;
+    bottom: 18%;
+
+    width: 320px;
+    max-width: 90%;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 20px;
+    z-index: 20;
+
+    font-family: "Barlow", sans-serif;
+}
+
+/* SKJULER ELEMENTER MED HIDDEN */
+#nat-knap[hidden],
+#nat-info[hidden] {
+    display: none;
+}
+
+/* AFSTAND MELLEM OVERSKRIFT OG TEKST */
+.info-boks h2 {
+    margin-bottom: 15px;
+}
+
+/* AFSTAND MELLEM TEKSTAFSNIT */
+.info-boks p + p {
+    margin-top: 20px;
+}
