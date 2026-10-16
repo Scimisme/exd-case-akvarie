@@ -1,6 +1,6 @@
-
 "use strict";
 
+// DAG OG NAT
 // Hent elementerne fra HTML
 const solKnap = document.getElementById("solKnap");
 const maaneKnap = document.getElementById("maaneKnap");
@@ -19,21 +19,18 @@ function visNat() {
 solKnap.addEventListener("click", visDag);
 maaneKnap.addEventListener("click", visNat);
 
-// GULDFISKENS SVØMME-FUNKTION: start
-
+// GULDFISK
 // Hent alle guldfiskene
 const guldfisk = document.querySelectorAll(".fish");
 
-// Få alle guldfiskene til at svømme - index afgør hvilken numme fisk der er tale om
+// Få alle guldfiskene til at svømme - index afgør hvilken numme fisk der er tale om 
 guldfisk.forEach(function(fisk, index) {
-
 // Placering på skærmen - startplacering, næste fisk (index-rækkefølgen) sættes efter 20 ift. første fisk, vel og mærke i procent
 fisk.style.top = (25 + index * 20) + "%";
 
 // Hver anden fisk svømmer i modsat retning
 if (index % 2 === 0) { // Fra venstre mod højre
     fisk.style.left = "-120px";
-
 fisk.animate(
 [
     { transform: "translateX(0) scaleX(-1)" },
@@ -46,10 +43,8 @@ fisk.animate(
         delay: index * 3000
     }
 );
-
 } else { // Fra højre mod venstre
-fisk.style.left = "100%";
-
+    fisk.style.left = "100%";
 fisk.animate(
 [
     { transform: "translateX(0)" },
