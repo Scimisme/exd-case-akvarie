@@ -96,7 +96,7 @@ html, body {
 }
 
 /* DESIGN AF SPØRGSMÅLSTEGN */
-.spørgsmålstegn {
+.spoergsmålstegn {
     display: flex;
     justify-content: center;
     align-items: center;
