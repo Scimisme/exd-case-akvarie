@@ -126,37 +126,39 @@ function playSound(fish) {
 
 //forEach loop, der går igennem alle fiskene i fish-arrayet
 fish.forEach(function(fish) {
+const getFishElem = document.getElementById(fish.id);
 
-    // Eksempel: hent fiskens <img> ved hjælp af id'et fra dataen
-   const getFishElem = document.getElementById(fish.id);
-
-    // Eksempel: når musen kommer ind over bilen, vises bilens informationer.
-    // Nyt i dag: "mouseenter" er en ny event - ligesom "click", bare når musen kommer ind over elementet.
-   getFishElem.addEventListener("mouseenter", function() {
-        showTooltip(fish);
-   });
-
-    // Skriv selv: lyt efter "click" på getFishElem og kald playSound(fish) inde i en anonym function.
-   getFishElem.addEventListener("click", function() {
-      playSound(fish)
-   });
+// Tjek om fisken findes i HTML
+if (getFishElem) {
+    getFishElem.addEventListener("mouseenter", function() {
+            showTooltip(fish);
+});
+getFishElem.addEventListener("click", function() {
+playSound(fish);
 });
 
-const link = document.getElementById("guldfiskLink");
+    }
+});
+
+//GULDFISK
+
+const guldfiskLink = document.getElementById("guldfiskLink");
 const sandslot = document.getElementById("sandslot");
 
+console.log("Guldfisk-link:", guldfiskLink);
+console.log("Sandslot:", sandslot);
+
 function skiftSlot(event) {
-console.log("Event:", event.type);
+    console.log("Hover virker!", event.type);
+
     if (event.type === "mouseenter") {
-        // Musen hover over: viser den animerede kiste
         sandslot.src = "img/sandslot.svg";
         sandslot.classList.add("aktiv");
     } else {
-        // Ellers vis den statiske kiste
         sandslot.src = "img/sandslotstatisk.svg";
         sandslot.classList.remove("aktiv");
     }
 }
 
-link.addEventListener("mouseenter", skiftSlot);
-link.addEventListener("mouseleave", skiftSlot);
+guldfiskLink.addEventListener("mouseenter", skiftSlot);
+guldfiskLink.addEventListener("mouseleave", skiftSlot);
