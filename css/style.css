@@ -105,7 +105,7 @@ header {
 }
 
 .fish1 {
-   bottom: 15vh;
+   bottom: 25vh;
    left: -30vw; /* starter 30vw uden for skærmen til venstre */
    animation: fish1 8s linear infinite;
    width: 400px;
@@ -121,7 +121,7 @@ header {
    bottom: 10vh;
    left: -30vw; /* starter 30vw uden for skærmen til venstre */
    animation: fish2 8s linear infinite;
-   width: 400px;
+   width: 350px;
    max-width: 100%;
 }
 
@@ -131,7 +131,7 @@ header {
 }
 
 .fish3 {
-   bottom: -3.4vh;
+   bottom: 50vh;
    left: -30vw; /* starter 30vw uden for skærmen til venstre */
    animation: fish3 8s linear infinite;
 }
@@ -142,7 +142,7 @@ header {
 }
 
 .fish4 {
-   bottom: 15vh;
+   bottom: 25vh;
    left: -40vw;
    animation: fish4 8s linear infinite;
    width: 250px;
@@ -154,10 +154,10 @@ header {
 }
 
 .fish5 {
-   bottom: 10vh;
-   left: -75vw;
+   bottom: 20vh;
+   left: -30vw;
    animation: fish5 8s linear infinite;
-   width: 200px;
+   width: 90px;
 }
 
 @keyframes fish5 {
@@ -166,7 +166,7 @@ header {
 }
 
 .fish6 {
-   bottom: 10vh;
+   bottom: 40vh;
    left: -75vw;
    animation: fish6 8s linear infinite;
    width: 200px;
