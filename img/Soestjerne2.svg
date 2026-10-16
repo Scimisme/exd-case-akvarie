@@ -1,0 +1,25 @@
+<svg width="252" height="248" viewBox="0 0 252 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="232" cy="104.5" rx="4" ry="3.5" fill="#FCC052"/>
+<ellipse cx="220" cy="105.5" rx="5" ry="4.5" fill="#FCC052"/>
+<ellipse cx="222.5" cy="116" rx="4.5" ry="4" fill="#FCC052"/>
+<circle cx="123.5" cy="10.5" r="2.5" fill="#FCC052"/>
+<ellipse cx="2" cy="1.5" rx="2" ry="1.5" transform="matrix(1 0 0 -1 124 18)" fill="#FCC052"/>
+<ellipse cx="1.5" cy="1" rx="1.5" ry="1" transform="matrix(1 0 0 -1 126 22)" fill="#FCC052"/>
+<ellipse cx="137.5" cy="110" rx="7.5" ry="14" fill="white"/>
+<ellipse cx="117.5" cy="110" rx="7.5" ry="14" fill="white"/>
+<ellipse cx="121" cy="110" rx="4" ry="7" fill="black"/>
+<ellipse cx="134" cy="110" rx="4" ry="7" fill="black"/>
+<path d="M149 138C148.5 137.5 108.5 137.5 107.5 138C106.5 138.5 119.619 155.15 130.5 154C139.999 152.996 149.5 138.5 149 138Z" fill="#E73939" stroke="#D60B0B"/>
+<path d="M101.987 96.7133C102.009 96.5592 119.718 -26.3216 129.265 5.15861C138.808 36.6245 156.505 96.5833 156.543 96.7133H244.819C276.29 96.7135 173.586 153.197 173.403 153.297C173.403 153.297 205.319 229.158 200.681 244.853C196.046 260.539 129.341 188.352 129.265 188.269C123.018 185.748 64.4332 255.048 57.8491 244.853C51.2654 234.658 85.1275 153.297 85.1275 153.297C85.0454 153.261 73.7825 148.26 59.4487 141.247V96.7133H101.987Z" fill="#F8CA99"/>
+<circle cx="125.5" cy="7.5" r="2.5" fill="#FCC052"/>
+<ellipse cx="2" cy="1.5" rx="2" ry="1.5" transform="matrix(1 0 0 -1 126 15)" fill="#FCC052"/>
+<ellipse cx="1.5" cy="1" rx="1.5" ry="1" transform="matrix(1 0 0 -1 129 19)" fill="#FCC052"/>
+<ellipse cx="114.5" cy="101" rx="7.5" ry="14" fill="white"/>
+<ellipse cx="118" cy="101" rx="4" ry="7" fill="black"/>
+<ellipse cx="135.5" cy="101" rx="7.5" ry="14" fill="white"/>
+<ellipse cx="132" cy="101" rx="4" ry="7" fill="black"/>
+<path d="M148.554 124.375C148.054 123.875 108.054 123.875 107.054 124.375C106.054 124.875 119.173 141.525 130.054 140.375C139.553 139.371 149.054 124.875 148.554 124.375Z" fill="#E73939" stroke="#D60B0B"/>
+<ellipse cx="223" cy="102.5" rx="5" ry="4.5" fill="#FCC052"/>
+<ellipse cx="239" cy="102.5" rx="4" ry="3.5" fill="#FCC052"/>
+<ellipse cx="232.5" cy="111" rx="4.5" ry="4" fill="#FCC052"/>
+</svg>

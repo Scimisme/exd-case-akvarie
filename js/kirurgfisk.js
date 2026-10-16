@@ -1,10 +1,25 @@
 "use strict";
 
-console.log("1: scriptet kører");
+const gulfisk = {
+  navn: "Bubbles",
+  foede: "Kirurgfisken, Bubbles spiser alger fra klipper og koraller",
+  levevis: "Han lever i Koralrev ved Det Indiske Ocean",
+  levealder: "Han bliver mellem 5-10 år",
+  stoerrelse: "Han kan blive mellem 15-40 cm stor",
+  humoer: "Bubbles er nysgerrig og lidt territorial overfor deres hjem",
+};
+    document.getElementById("fisk-navn").textContent = gulfisk.navn;
+    document.getElementById("fisk-foede").textContent = gulfisk.foede;
+    document.getElementById("fisk-levevis").textContent = gulfisk.levevis;
+    document.getElementById("fisk-levealder").textContent = gulfisk.levealder;
+    document.getElementById("fisk-stoerrelse").textContent = gulfisk.stoerrelse;
+    document.getElementById("fisk-humoer").textContent = gulfisk.humoer;
+
+console.log("scriptet kører");
 const kiste = document.getElementById("skattekiste");
 const link = document.getElementById("skattekisteLink")
 
-console.log("2: kiste er:", kiste);
+console.log("kiste er:", kiste);
 
 const lukketKiste = "img/skattekiste-statisk.svg";
 const aabenKiste = "img/skattekiste-aaben.svg";
@@ -14,7 +29,6 @@ forudindlaes.src = aabenKiste;
 
 function skiftKiste(event) {
   console.log("3: funktionen kører, hændelse:", event.type);
-
   if (event.type === "mouseenter") {
     kiste.src = aabenKiste;
     kiste.classList.add("aktiv");
@@ -59,6 +73,33 @@ function svoemHenTilKiste(event) {
   }
 }
 
-// Fiskene svømmer
+
 kiste.addEventListener("mouseenter", svoemHenTilKiste);
 kiste.addEventListener("mouseleave", svoemHenTilKiste);
+
+// ---------- Infoboks ved klik på en fisk ----------
+const infoBoks = document.getElementById("info-kirurgfisk");
+const lukKnap = document.getElementById("luk-info");
+const alleFisk = document.querySelectorAll(".gulfisk");
+
+function visInfo(event) {
+  infoBoks.classList.add("synlig");
+}
+
+function skjulInfo() {
+  infoBoks.classList.remove("synlig");
+}
+
+// Klik på en fisk viser boksen
+alleFisk.forEach((enFisk) => {
+  enFisk.addEventListener("click", visInfo);
+});
+
+lukKnap.addEventListener("click", skjulInfo);
+
+// Escape lukker den også
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    skjulInfo();
+  }
+});

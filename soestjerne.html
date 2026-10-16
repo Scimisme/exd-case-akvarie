@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>peaches univers</title>
 </head>
-<link rel="stylesheet" href="../css/style.css">
+<!--link til css-->
+<link rel="stylesheet" href="css/soestjerne.css">
 
 <body>
 
 <!-- Vedste du, at søstjeren kan gendanne en ny arm, hvis den mister en -->
  <!-- Vidste du, at søstjernen, hverken har hjerne eller hjerte -->
     
+ <!--hvad mangler jeg 
+ - knap der gør man kommer tilbage til forsiden
+ - flag oppe i hjørnet
+ - boks med info om søstjerner 
+ - en søstjerne der mister en arm
+ -->
+
+
 </body>
 </html>
 
 <!--link til javascript-->
-<script src="peach/script.js"></script>
+<script src="js/soestjerne.js"></script>
 
 
 <!DOCTYPE html>
@@ -28,18 +37,36 @@
 
 </head>
 <body>
-    
+     <main>
+      <!-- knap tilbage til forsiden-->
+     <a href="index.html" class="tilbage-knap">
+      ← Tilbage til akvariet
+     </a>
+     
+    <!--overskrift på forsiden-->
+    <div class="intro-tekst">
+        <h1>Tryk rundt og udforsk akvariet</h1>
+    </div>
+
+
     <!--biled af universet-->
-    <img src="img/soestjerne-univers-1.svg" 
-    alt="peaches universe" 
-    height="1728" width="1117"
+    <img src="img/soestjerne-univers.svg" 
+    alt="Søstjernens Univers" 
     class="baggrund">
 
-    <!--billed af peach-->
-    <img src="img/soestjerne.svg"
-    alt="søstjernen peach"
-    id="peach">
+    <img src="img/soestjerne.svg" 
+             alt="Søstjerne" 
+             id="soestjerne"> 
 
+<!--info om søstjerner ved klik på musling-->
+<div id="info-ved-musling" class="info-om-soestjerner" hidden>
+     <button id="luk-info" aria-label="luk info">x</button>>
+    <h2>Vidste du?</h2>
+    <p> Søstjerner er rovdyr og de elsker blåmuslinger</p>
+</div>
+
+    </main>
+    
 
 </body>
 </html>
