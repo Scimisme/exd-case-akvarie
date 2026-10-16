@@ -81,3 +81,12 @@ fisk.animation = animation;
 }
 });
 // GULDFISKENS SVØMME-FUNKTION: slut
+
+natKnap.addEventListener("click", function() {
+    natInfo.hidden = false;
+});
+
+// LUKKER FAKTABOKSEN VED KLIK PÅ X
+lukNatInfo.addEventListener("click", function() {
+    natInfo.hidden = true;
+});
