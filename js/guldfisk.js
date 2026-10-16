@@ -5,8 +5,11 @@
 const solKnap = document.getElementById("solKnap");
 const maaneKnap = document.getElementById("maaneKnap");
 const billede = document.getElementById("guld-baggrund");
+const natKnap = document.getElementById("nat-knap");
+const natInfo = document.getElementById("nat-info");
+const lukNatInfo = document.getElementById("luk-nat-info");
 
-// Min funktion til at skifte til dag
+// Min funktion til at skifte til dag - hvor min faktaboks er skjult
 function visDag() {
   billede.src = "/img/guld-dag.svg";
 
@@ -16,7 +19,11 @@ function visDag() {
     });
 }
 
-// Min funktion til at skifte til nat
+// SKJULER SPØRGSMÅLSTEGN OG FAKTABOKS
+    natKnap.hidden = true;
+    natInfo.hidden = true;
+
+// Min funktion til at skifte til nat - hvor min faktaboks bliver synlig
 function visNat() {
   billede.src = "/img/guld-nat.svg";
 
@@ -26,6 +33,7 @@ function visNat() {
     });
 }
 
+natKnap.hidden = false;
 solKnap.addEventListener("click", visDag);
 maaneKnap.addEventListener("click", visNat);
 
