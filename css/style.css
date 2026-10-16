@@ -276,18 +276,13 @@ header {
   transform: scale(1.1);
 }
 
-#anemoneLink {
-  position: absolute;
-  bottom: 1%;        /* ret til dine egne værdier */
-  left: 30%;
-  width: 250px;      /* her bestemmer du kistens størrelse */
-  display: block;
-  z-index: 10;
-}
-
-#anemone {
+#sea_anemone {
   width: 100%;       /* fylder linket ud */
   height: auto;      /* beholder de rigtige proportioner */
   display: block;
   transition: transform 0.3s ease;
+}
+
+#sea_anemone.aktiv {
+  transform: scale(1.1);
 }
