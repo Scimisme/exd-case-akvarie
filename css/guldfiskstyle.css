@@ -135,23 +135,19 @@ html, body {
 #nat-info[hidden] {
     display: none;
 }
-
 /* AFSTAND MELLEM OVERSKRIFT OG TEKST */
 .info-boks h2 {
     margin-bottom: 15px;
 }
-
 /* AFSTAND MELLEM TEKSTAFSNIT */
 .info-boks p + p {
     margin-top: 20px;
 }
-
-/* PLACERING AF SPØRGSMÅLSTEGN OM NATTEN */
+/* denne styling placerer spørgsmålstegnet om natten */
 #nat-knap {
     position: absolute;
     top: 50%;
-    right: 22%;
-
+    right: 50%;
     border: none;
     background: transparent;
     padding: 0;
