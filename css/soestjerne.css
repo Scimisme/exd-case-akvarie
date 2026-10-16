@@ -36,7 +36,7 @@ html, body{
 #soestjerne {
     position: absolute;
     bottom: 340px;
-    left: 2%;
+    left: 1.5%;
     width: 200px; 
     height: auto;
 }
@@ -86,4 +86,9 @@ html, body{
     border-radius: 20px;
     z-index: 20; 
     font-family: arial, sans-serif;
+}
+
+/*søstjerne der bevæger sig*/ 
+#soestjerne {
+    cursor: pointer; 
 }
