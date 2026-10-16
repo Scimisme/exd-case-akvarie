@@ -105,7 +105,7 @@ header {
 }
 
 .fish1 {
-   bottom: 25vh;
+   bottom: 15vh;
    left: -30vw; /* starter 30vw uden for skærmen til venstre */
    animation: fish1 8s linear infinite;
    width: 400px;
@@ -121,7 +121,7 @@ header {
    bottom: 10vh;
    left: -30vw; /* starter 30vw uden for skærmen til venstre */
    animation: fish2 8s linear infinite;
-   width: 350px;
+   width: 400px;
    max-width: 100%;
 }
 
@@ -131,7 +131,7 @@ header {
 }
 
 .fish3 {
-   bottom: 50vh;
+   bottom: -3.4vh;
    left: -30vw; /* starter 30vw uden for skærmen til venstre */
    animation: fish3 8s linear infinite;
 }
@@ -142,7 +142,7 @@ header {
 }
 
 .fish4 {
-   bottom: 25vh;
+   bottom: 15vh;
    left: -40vw;
    animation: fish4 8s linear infinite;
    width: 250px;
@@ -154,10 +154,10 @@ header {
 }
 
 .fish5 {
-   bottom: 20vh;
-   left: -30vw;
+   bottom: 10vh;
+   left: -75vw;
    animation: fish5 8s linear infinite;
-   width: 90px;
+   width: 200px;
 }
 
 @keyframes fish5 {
@@ -166,7 +166,7 @@ header {
 }
 
 .fish6 {
-   bottom: 40vh;
+   bottom: 10vh;
    left: -75vw;
    animation: fish6 8s linear infinite;
    width: 200px;
@@ -253,6 +253,19 @@ header {
    height: 16%; 
    z-index: 10;
    cursor: pointer; 
+}
+
+#piratskibLink {
+    position: absolute;
+   bottom: 60%;        
+   left: 45%;
+   width: 250px;      
+   display: block;
+   z-index: 10;
+}
+  
+#piratskib.aktiv {
+   transform: scale(1.1);
 }
 
 /*Guldfisk univers*/
