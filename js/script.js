@@ -21,6 +21,7 @@ link.addEventListener("mouseleave", skiftKiste);
 //variabler skal opdateres så de matcher med vores egen tabel
 const fish = [
     {
+        elementId: "blueFish",
         id: "Palettkirurg",
         superpower: "Har mikroskopiske giftige knive i halen",
         diet: "Krebsdyr og krill",
@@ -32,6 +33,7 @@ const fish = [
         mood: "Fredelig og rolig"
     },
     {
+        elementId: "clownFish",
         id: "Klovnfisk",
         superpower: "Immun overfor giftige planter",
         diet: "Krebsdyr og alger",
@@ -43,6 +45,7 @@ const fish = [
         mood: "Modig og frygtløs"
     },
     {
+        elementId: "greenFish",
         id: "søstjerne",
         superpower: "Gro nye armer",
         diet: "Blåmuslinger",
@@ -54,6 +57,7 @@ const fish = [
         mood: "Udholdende og rolig"
     },
     {
+        elementId: "orangeFish",
         id: "Guldfisk",
         superpower: "Sover med åbne øjne",
         diet: "Planter og smådyr",
@@ -65,6 +69,7 @@ const fish = [
         mood: "Social, aktiv"
     },
     {
+        elementId: "blueseahorse",
         id: "Søhest",
         superpower: "Kan gøre sig selv usynlig",
         diet: "Små rejer",
@@ -76,6 +81,7 @@ const fish = [
         mood: "Legesyg og glad"
     },
     {
+        elementId: "yellowFish",
         id: "Kirurgfisk",
         superpower: "Hurtig algsstøvsuger",
         diet: "Alger fra klipper og koraller",
@@ -134,36 +140,63 @@ function playSound(fish) {
 //forEach loop, der går igennem alle fiskene i fish-arrayet
 fish.forEach(function(fish) {
 
-    // Eksempel: hent fiskens <img> ved hjælp af id'et fra dataen
-   const getFishElem = document.getElementById(fish.id);
+    // Hent fisken fra HTML
+    const getFishElem = document.getElementById(fish.elementId);
 
-    // Eksempel: når musen kommer ind over bilen, vises bilens informationer.
-    // Nyt i dag: "mouseenter" er en ny event - ligesom "click", bare når musen kommer ind over elementet.
-   getFishElem.addEventListener("mouseenter", function() {
-        showTooltip(fish);
-   });
+    // Tjek om fisken findes i HTML
+    if (getFishElem) {
 
-    // Skriv selv: lyt efter "click" på getFishElem og kald playSound(fish) inde i en anonym function.
-   getFishElem.addEventListener("click", function() {
-      playSound(fish)
-   });
+        // Vis information ved hover
+        getFishElem.addEventListener("mouseenter", function() {
+            showTooltip(fish);
+        });
+
+        // Afspil lyd ved klik
+        getFishElem.addEventListener("click", function() {
+            playSound(fish);
+        });
+
+    }
 });
 
-const link = document.getElementById("guldfiskLink");
+//GULDFISK
+
+const guldfiskLink = document.getElementById("guldfiskLink");
 const sandslot = document.getElementById("sandslot");
 
+console.log("Guldfisk-link:", guldfiskLink);
+console.log("Sandslot:", sandslot);
+
 function skiftSlot(event) {
-console.log("Event:", event.type);
+    console.log("Hover virker!", event.type);
+
     if (event.type === "mouseenter") {
-        // Musen hover over: viser den animerede kiste
         sandslot.src = "img/sandslot.svg";
         sandslot.classList.add("aktiv");
     } else {
-        // Ellers vis den statiske kiste
         sandslot.src = "img/sandslotstatisk.svg";
         sandslot.classList.remove("aktiv");
     }
 }
 
-link.addEventListener("mouseenter", skiftSlot);
-link.addEventListener("mouseleave", skiftSlot);
+guldfiskLink.addEventListener("mouseenter", skiftSlot);
+guldfiskLink.addEventListener("mouseleave", skiftSlot);
+
+//Sø anemone
+const anemoneLink = document.getElementById("sea-anemone-link");
+const anemone = document.getElementById("sea_anemone");
+
+function skiftAnemone(event) {
+    if (event.type === "mouseenter") {
+        // Musen hover over: viser den animerede anemone
+        anemone.src = "img/sea_anemone.svg";
+        anemone.classList.add("aktiv");
+    } else {
+        // Ellers vis den statiske anemone
+        anemone.src = "img/sea_anemone_alt.svg";
+        anemone.classList.remove("aktiv");
+    }
+}
+
+anemoneLink.addEventListener("mouseenter", skiftAnemone);
+anemoneLink.addEventListener("mouseleave", skiftAnemone);
