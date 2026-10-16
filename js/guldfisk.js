@@ -8,12 +8,12 @@ const billede = document.getElementById("guld-baggrund");
 
 // Min funktion til at skifte til dag
 function visDag() {
-  billede.src = "/img/guld-dag.svg";
+  billede.src = "img/guld-dag.svg";
 }
 
 // Min funktion til at skifte til nat
 function visNat() {
-  billede.src = "/img/guld-nat.svg";
+  billede.src = "img/guld-nat.svg";
 }
 
 solKnap.addEventListener("click", visDag);
