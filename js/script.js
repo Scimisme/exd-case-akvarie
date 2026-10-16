@@ -193,7 +193,7 @@ function skiftAnemone(event) {
         anemone.classList.add("aktiv");
     } else {
         // Ellers vis den statiske anemone
-        anemone.src = "img/sea_anemone_alt.svg";
+        anemone.src = "img/sea_anemone.svg";
         anemone.classList.remove("aktiv");
     }
 }
