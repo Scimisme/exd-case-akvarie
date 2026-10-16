@@ -145,3 +145,16 @@ html, body {
 .info-boks p + p {
     margin-top: 20px;
 }
+
+/* PLACERING AF SPØRGSMÅLSTEGN OM NATTEN */
+#nat-knap {
+    position: absolute;
+    top: 50%;
+    right: 22%;
+
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    z-index: 10;
+}
