@@ -1,6 +1,6 @@
 "use strict";
 
-const klovnfisk_fish = [
+const fish = [
     {
         elementId: "blueFish",
         id: "Palettkirurg",
@@ -30,21 +30,16 @@ const klovnfisk_fish = [
 const tooltip = document.getElementById("tooltip");
 let tooltipTimer;
 
-klovnfisk_fish.forEach(function(fish) {
+fish.forEach(function(fish) {
 
     // Eksempel: hent fiskens <img> ved hjælp af id'et fra dataen
-   const getFishElem = document.getElementById(fish.id);
+    const getFishElem = document.getElementById(fish.id);
 
     // Eksempel: når musen kommer ind over bilen, vises bilens informationer.
     // Nyt i dag: "mouseenter" er en ny event - ligesom "click", bare når musen kommer ind over elementet.
-   getFishElem.addEventListener("mouseenter", function() {
-        showTooltip(fish);
-   });
-
-    // Skriv selv: lyt efter "click" på getFishElem og kald playSound(fish) inde i en anonym function.
-   getFishElem.addEventListener("click", function() {
-      playSound(fish)
-   });
+    getFishElem.addEventListener("mouseenter", function() {
+            showTooltip(fish);
+    });
 
     //Starter animation af blå fisk ved klik
     const blueFishImage = document.getElementById("blueFish");
