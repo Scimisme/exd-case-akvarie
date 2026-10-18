@@ -1,8 +1,7 @@
 "use strict";
 
-const klovnfisk_fish = [
+const fish = [
     {
-        elementId: "blueFish",
         id: "Palettkirurg",
         superpower: "Har mikroskopiske giftige knive i halen",
         diet: "Krebsdyr og krill",
@@ -14,7 +13,6 @@ const klovnfisk_fish = [
         mood: "Fredelig og rolig"
     },
     {
-        elementId: "clownFish",
         id: "Klovnfisk",
         superpower: "Immun overfor giftige planter",
         diet: "Krebsdyr og alger",
@@ -30,24 +28,19 @@ const klovnfisk_fish = [
 const tooltip = document.getElementById("tooltip");
 let tooltipTimer;
 
-klovnfisk_fish.forEach(function(fish) {
+fish.forEach(function(fish) {
 
     // Eksempel: hent fiskens <img> ved hjælp af id'et fra dataen
-   const getFishElem = document.getElementById(fish.id);
+    const getFishElem = document.getElementById(fish.id);
 
     // Eksempel: når musen kommer ind over bilen, vises bilens informationer.
     // Nyt i dag: "mouseenter" er en ny event - ligesom "click", bare når musen kommer ind over elementet.
-   getFishElem.addEventListener("mouseenter", function() {
-        showTooltip(fish);
-   });
-
-    // Skriv selv: lyt efter "click" på getFishElem og kald playSound(fish) inde i en anonym function.
-   getFishElem.addEventListener("click", function() {
-      playSound(fish)
-   });
+    getFishElem.addEventListener("mouseenter", function() {
+            showTooltip(fish);
+    });
 
     //Starter animation af blå fisk ved klik
-    const blueFishImage = document.getElementById("blueFish");
+    const blueFishImage = document.getElementById("Palettkirurg");
     let blueFishTimer;
 
     blueFishImage.addEventListener("click", function() {
@@ -60,7 +53,7 @@ klovnfisk_fish.forEach(function(fish) {
     });
 
      //Starter animation af blå fisk ved klik
-    const clownFishImage = document.getElementById("clownFish");
+    const clownFishImage = document.getElementById("Klovnfisk");
     let clownFishTimer;
 
     clownFishImage.addEventListener("click", function() {
@@ -73,7 +66,7 @@ klovnfisk_fish.forEach(function(fish) {
     });
 
     //Info box til blå fisk
-    const blueFishForInfo = document.getElementById("blueFish");
+    const blueFishForInfo = document.getElementById("Palettkirurg");
     const blueFishInfo = document.getElementById("blue-fish-info");
     let infoShowTimer;
     let infoHideTimer;
@@ -93,7 +86,7 @@ klovnfisk_fish.forEach(function(fish) {
     });
 
     //Info box til klovnfisk
-    const clownFishForInfo = document.getElementById("clownFish");
+    const clownFishForInfo = document.getElementById("Klovnfisk");
     const clownFishInfo = document.getElementById("clown-fish-info");
     let infoHideTimer2; 
 
