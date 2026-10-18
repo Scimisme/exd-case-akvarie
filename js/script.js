@@ -200,3 +200,18 @@ function skiftAnemone(event) {
 
 anemoneLink.addEventListener("mouseenter", skiftAnemone);
 anemoneLink.addEventListener("mouseleave", skiftAnemone);
+
+//piratskib//
+
+const piratskibLink = document.getElementById("piratskibLink");
+const piratskib = document.getElementById("piratskib");
+
+function skiftSkib(event) {
+    if (event.type === "mouseenter") {
+        piratskib.src = "img/piratskib-animeret1.svg";
+        piratskib.classList.add("aktiv");
+    } else {
+        piratskib.src = "img/piratskib.svg";
+        piratskib.classList.remove("aktiv");
+    }
+}
