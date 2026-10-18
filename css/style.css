@@ -80,7 +80,7 @@ header {
    inset: 0; 
    width: 100%;
    height: 100%;
-   background: url(../img/main-background.svg);
+   background: url(../img/main-background-2.svg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -105,22 +105,24 @@ header {
 }
 
 .fish1 {
-   bottom: 15vh;
+   bottom: 5vh;
    left: -30vw; /* starter 30vw uden for skærmen til venstre */
-   animation: fish1 8s linear infinite;
+   animation: fish1 12s linear infinite;
    width: 400px;
    max-width: 100%;
 }
+
 
 @keyframes fish1 {
    0%   { transform: translateX(0) rotateY(0deg); }
    100% { transform: translateX(130vw) rotateY(0deg); }
 }
 
+
 .fish2 {
-   bottom: 10vh;
+   bottom: 40vh;
    left: -30vw; /* starter 30vw uden for skærmen til venstre */
-   animation: fish2 8s linear infinite;
+   animation: fish2 15s linear infinite;
    width: 400px;
    max-width: 100%;
 }
@@ -131,9 +133,9 @@ header {
 }
 
 .fish3 {
-   bottom: -3.4vh;
+   bottom: 60vh;
    left: -30vw; /* starter 30vw uden for skærmen til venstre */
-   animation: fish3 8s linear infinite;
+   animation: fish3 9s linear infinite;
 }
 
 @keyframes fish3 {
@@ -142,9 +144,9 @@ header {
 }
 
 .fish4 {
-   bottom: 15vh;
+   bottom: 25vh;
    left: -40vw;
-   animation: fish4 8s linear infinite;
+   animation: fish4 12s linear infinite;
    width: 250px;
 }
 
@@ -156,8 +158,8 @@ header {
 .fish5 {
    bottom: 10vh;
    left: -75vw;
-   animation: fish5 8s linear infinite;
-   width: 200px;
+   animation: fish5 16s linear infinite;
+   width: 150px;
 }
 
 @keyframes fish5 {
@@ -168,7 +170,7 @@ header {
 .fish6 {
    bottom: 10vh;
    left: -75vw;
-   animation: fish6 8s linear infinite;
+   animation: fish6 14s linear infinite;
    width: 200px;
 }
 
@@ -176,6 +178,8 @@ header {
    0%   { transform: translateX(0) rotateY(0deg); }
    100% { transform: translateX(300vw) rotateY(0deg); }
 }
+
+
 
 .tooltip {
    position: fixed;
@@ -256,12 +260,18 @@ header {
 }
 
 #piratskibLink {
+
     position: absolute;
    bottom: 60%;        
    left: 45%;
    width: 250px;      
    display: block;
    z-index: 10;
+
+   width: 100%;       /* fylder linket ud */
+   height: auto;      /* beholder de rigtige proportioner */
+   display: block;
+   transition: transform 0.3s ease;
 }
   
 #piratskib.aktiv {
