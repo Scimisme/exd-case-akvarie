@@ -2,7 +2,6 @@
 
 const fish = [
     {
-        elementId: "blueFish",
         id: "Palettkirurg",
         superpower: "Har mikroskopiske giftige knive i halen",
         diet: "Krebsdyr og krill",
@@ -14,7 +13,6 @@ const fish = [
         mood: "Fredelig og rolig"
     },
     {
-        elementId: "clownFish",
         id: "Klovnfisk",
         superpower: "Immun overfor giftige planter",
         diet: "Krebsdyr og alger",
@@ -42,7 +40,7 @@ fish.forEach(function(fish) {
     });
 
     //Starter animation af blå fisk ved klik
-    const blueFishImage = document.getElementById("blueFish");
+    const blueFishImage = document.getElementById("Palettkirurg");
     let blueFishTimer;
 
     blueFishImage.addEventListener("click", function() {
@@ -55,7 +53,7 @@ fish.forEach(function(fish) {
     });
 
      //Starter animation af blå fisk ved klik
-    const clownFishImage = document.getElementById("clownFish");
+    const clownFishImage = document.getElementById("Klovnfisk");
     let clownFishTimer;
 
     clownFishImage.addEventListener("click", function() {
@@ -68,7 +66,7 @@ fish.forEach(function(fish) {
     });
 
     //Info box til blå fisk
-    const blueFishForInfo = document.getElementById("blueFish");
+    const blueFishForInfo = document.getElementById("Palettkirurg");
     const blueFishInfo = document.getElementById("blue-fish-info");
     let infoShowTimer;
     let infoHideTimer;
@@ -88,7 +86,7 @@ fish.forEach(function(fish) {
     });
 
     //Info box til klovnfisk
-    const clownFishForInfo = document.getElementById("clownFish");
+    const clownFishForInfo = document.getElementById("Klovnfisk");
     const clownFishInfo = document.getElementById("clown-fish-info");
     let infoHideTimer2; 
 
