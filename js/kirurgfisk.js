@@ -15,9 +15,8 @@ const gulfisk = {
     document.getElementById("fisk-stoerrelse").textContent = gulfisk.stoerrelse;
     document.getElementById("fisk-humoer").textContent = gulfisk.humoer;
 
-console.log("scriptet kører");
+
 const kiste = document.getElementById("skattekiste");
-const link = document.getElementById("skattekisteLink")
 
 console.log("kiste er:", kiste);
 
@@ -27,8 +26,10 @@ const aabenKiste = "img/skattekiste-aaben.svg";
 const forudindlaes = new Image();
 forudindlaes.src = aabenKiste;
 
+//funktionen der får kisten il at åbne sig. Henter svg som er kaldet ved aaben/lukket.
+//aktiveres ved mouseleave / mouseenter
 function skiftKiste(event) {
-  console.log("3: funktionen kører, hændelse:", event.type);
+  console.log("funktionen kører, hændelse:", event.type);
   if (event.type === "mouseenter") {
     kiste.src = aabenKiste;
     kiste.classList.add("aktiv");
