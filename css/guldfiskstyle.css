@@ -133,7 +133,7 @@ html, body {
     display: none;
 }
 /* AFSTAND MELLEM OVERSKRIFT OG TEKST */
-.info-boks h2 {
+.info-boks h1 {
     margin-bottom: 15px;
 }
 /* AFSTAND MELLEM TEKSTAFSNIT */
