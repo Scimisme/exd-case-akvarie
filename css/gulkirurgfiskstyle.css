@@ -36,7 +36,7 @@ html, body {
 }
 
 /*FÆLLES DESIGN TIL ALLE FAKTABOKSE*/
-#info-kirurgfisk {
+#info-gulkirurgfisk {
     position: absolute;
     right: 70%;
     bottom: 11%;
@@ -109,7 +109,7 @@ html, body {
 }
 
 /* Når klassen "synlig" er på, popper den frem */
-#info-kirurgfisk.synlig {
+#info-gulkirurgfisk.synlig {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
