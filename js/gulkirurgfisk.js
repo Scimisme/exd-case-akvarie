@@ -24,7 +24,7 @@ const lukketKiste = "img/skattekiste-statisk.svg";
 const aabenKiste = "img/skattekiste-aaben.svg";
 
 //funktionen der får kisten il at åbne sig. Henter svg som er kaldet ved aaben/lukket.
-//aktiveres ved mouseleave / mouseenter
+//aktiveres ved mouseleave/mouseenter
 function skiftKiste(event) {
   console.log("funktionen kører, hændelse:", event.type);
   if (event.type === "mouseenter") {
@@ -34,6 +34,8 @@ function skiftKiste(event) {
     kiste.src = lukketKiste;
     kiste.classList.remove("aktiv");
   }
+  //classList.add tilføjer klassen "aktiv" til elementet ved interaktionen,
+  //fordi CSS'en så kan ændre udseendet (størrelse og placering), uden at JS skal sætte stilen direkte.
 }
 //Kisten skifter mellem åben og luk
 kiste.addEventListener("mouseenter", skiftKiste);
