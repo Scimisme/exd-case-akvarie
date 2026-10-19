@@ -23,9 +23,6 @@ console.log("kiste er:", kiste);
 const lukketKiste = "img/skattekiste-statisk.svg";
 const aabenKiste = "img/skattekiste-aaben.svg";
 
-const forudindlaes = new Image();
-forudindlaes.src = aabenKiste;
-
 //funktionen der får kisten il at åbne sig. Henter svg som er kaldet ved aaben/lukket.
 //aktiveres ved mouseleave / mouseenter
 function skiftKiste(event) {
