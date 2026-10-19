@@ -110,6 +110,7 @@ header {
    animation: fish1 12s linear infinite;
    width: 400px;
    max-width: 100%;
+   z-index: 10;
 }
 
 
@@ -125,6 +126,7 @@ header {
    animation: fish2 15s linear infinite;
    width: 400px;
    max-width: 100%;
+   z-index: 10;
 }
 
 @keyframes fish2 {
@@ -136,6 +138,7 @@ header {
    bottom: 60vh;
    left: -30vw; /* starter 30vw uden for skærmen til venstre */
    animation: fish3 9s linear infinite;
+   z-index: 10;
 }
 
 @keyframes fish3 {
@@ -148,6 +151,7 @@ header {
    left: -40vw;
    animation: fish4 12s linear infinite;
    width: 250px;
+   z-index: 10;
 }
 
 @keyframes fish4 {
@@ -160,6 +164,7 @@ header {
    left: -75vw;
    animation: fish5 16s linear infinite;
    width: 150px;
+   z-index: 10;
 }
 
 @keyframes fish5 {
@@ -172,6 +177,7 @@ header {
    left: -75vw;
    animation: fish6 14s linear infinite;
    width: 200px;
+   z-index: 10;
 }
 
 @keyframes fish6 {
